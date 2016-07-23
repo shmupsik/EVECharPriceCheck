@@ -5,7 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace EVECharPriceCheck
@@ -19,6 +22,7 @@ namespace EVECharPriceCheck
         }
 
         EveCharPriceCalculator PC = new EveCharPriceCalculator();
+        ResourceManager LocRM = new ResourceManager("EveCharPriceCheck.WinFormStrings", Assembly.GetExecutingAssembly());
 
 
         private class ComboBoxRegionItem
@@ -34,6 +38,43 @@ namespace EVECharPriceCheck
             {
                 // Generates the text shown in the combo box
                 return Name;
+            }
+        }
+
+        private void ChangeFormLanguage(string newLanguageString)
+        {
+            var resources = new ComponentResourceManager(typeof(MainForm));
+
+            CultureInfo newCultureInfo = new CultureInfo(newLanguageString);
+
+            //Thread.CurrentThread.CurrentCulture = newCultureInfo;
+            Thread.CurrentThread.CurrentUICulture = newCultureInfo;
+
+            //Применяем для каждого контрола на форме новую культуру
+            foreach (Control c in this.Controls)
+            {
+                resources.ApplyResources(c, c.Name, newCultureInfo);
+            }
+
+            ////Отдельно меняем для тайтла самой формы локализацию
+            //resources.ApplyResources(this, "$this", newCultureInfo);
+
+            //Для элементов статус стрипа устанавливаем также установки локализации
+            foreach (var item in menuStrip1.Items.Cast<ToolStripItem>().Where(item => (item is ToolStripStatusLabel) != false))
+            {
+                resources.ApplyResources(item, item.Name, newCultureInfo);
+            }
+
+            ////Устанавливаем текст на кнопке, которая была изображена на скриншоте раньше название локализации
+            //TSDD_Language.Text = newCultureInfo.NativeName;
+
+        }
+
+        private void SetCurrenLanguageButtonChecked(object sender)
+        {
+            foreach (ToolStripMenuItem languageButton in languageToolStripMenuItem.DropDownItems)
+            {
+                languageButton.Checked = languageButton == sender;
             }
         }
 
@@ -82,21 +123,21 @@ namespace EVECharPriceCheck
 
         private String FormatShortDescription(EveCharPriceCalculator calculator)
         {
-            String s1_template = "The character price is from {0} to {1} ISK. ";
-            String s2_template = "Which is equivalent to approx. {0} to {1} PLEX.";
-            String empty_template = "Seems that character costs nothing.";
+            String short_s1_template = "The character price is from {0} to {1} ISK. ";
+            String short_s2_template = "Which is equivalent to approx. {0} to {1} PLEX.";
+            String short_empty_template = "Seems that character costs nothing.";
 
             StringBuilder result = new StringBuilder();
 
             if (calculator.ResultIskMaxPrice > 0)
             {
-                result.AppendFormat(s1_template, EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice), EveCharPriceCalculator.FormatValue(calculator.ResultIskMaxPrice));
+                result.AppendFormat(LocRM.GetString("short_s1_template"), EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice), EveCharPriceCalculator.FormatValue(calculator.ResultIskMaxPrice));
                 result.AppendLine();
-                result.AppendFormat(s2_template, calculator.ResultPlexMinPrice, calculator.ResultPlexMaxPrice);
+                result.AppendFormat(LocRM.GetString("short_s2_template"), calculator.ResultPlexMinPrice, calculator.ResultPlexMaxPrice);
             }
             else
             {
-                result.Append(empty_template);
+                result.Append(LocRM.GetString("short_empty_template"));
             }
 
             return result.ToString();
@@ -104,13 +145,14 @@ namespace EVECharPriceCheck
 
         private String FormatDetailedDescription(EveCharPriceCalculator calculator)
         {
-            String lowestZero_template = "The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.";
-            String s1_template = "The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.";
-            String s2_template = "The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.";
-            String s3_template = "Note, this is only techical price check.";
-            String s4_template = "While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.";
-            String s5_template = "The upper price may vary due to skillboks needed to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.";
-            String empty_template = "";
+            //String lowestZero_template = "The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.";
+            String detailed_s0_template = LocRM.GetString("detailed_s0_template");
+            String detailed_s1_template = "The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.";
+            String detailed_s2_template = "The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.";
+            String detailed_s3_template = "Note, this is only techical price check.";
+            String detailed_s4_template = "While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.";
+            String detailed_s5_template = "The upper price may vary due to skillboks needed to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.";
+            String detailed_empty_template = "";
 
             StringBuilder result = new StringBuilder();
 
@@ -118,7 +160,7 @@ namespace EVECharPriceCheck
             {
                 if (calculator.ResultIskMinPrice > 0)
                 {
-                    result.AppendFormat(s1_template, new object[]
+                    result.AppendFormat(LocRM.GetString("detailed_s1_template"), new object[]
                         {
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice),
                         calculator.ResultSkillExtractorsItemsRequired,
@@ -126,21 +168,21 @@ namespace EVECharPriceCheck
                         EveCharPriceCalculator.FormatValue(calculator.SkillExtractorMinSellPrice * calculator.ResultSkillExtractorsItemsRequired),
                         EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMaxBuyPrice),
                         EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMaxBuyPrice * calculator.ResultSkillExtractorsItemsRequired),
-                        (calculator.ResultSkillExtractorsItemsRequired > 1 ? "s" : ""),
-                        (calculator.ResultSkillExtractorsItemsRequired > 1 ? "each" : "")
+                        (calculator.ResultSkillExtractorsItemsRequired > 1 ? LocRM.GetString("eng_multi_1") : ""),
+                        (calculator.ResultSkillExtractorsItemsRequired > 1 ? LocRM.GetString("eng_multi_2") : "")
                         }
                     );
                 }
                 else
                 {
-                    result.AppendFormat(lowestZero_template, new object[]
+                    result.AppendFormat(LocRM.GetString("detailed_s0_template"), new object[]
                         {
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice)
                         }
                     );
                 }
                 result.AppendLine();
-                result.AppendFormat(s2_template, new object[]
+                result.AppendFormat(LocRM.GetString("detailed_s2_template"), new object[]
                     {
                     EveCharPriceCalculator.FormatValue(calculator.ResultIskMaxPrice),
                     calculator.ResultSkillInjectorsItemsRequired,
@@ -148,12 +190,12 @@ namespace EVECharPriceCheck
                     }
                 );
                 result.AppendLine();
-                result.Append(s3_template);
+                result.Append(LocRM.GetString("detailed_s3_template"));
 
                 if (calculator.ResultIskMinPrice > 0)
                 {
                     result.AppendLine();
-                    result.AppendFormat(s4_template, new object[]
+                    result.AppendFormat(LocRM.GetString("detailed_s4_template"), new object[]
                         {
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice),
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskToTrainToMinExtractPoints),
@@ -164,11 +206,11 @@ namespace EVECharPriceCheck
                     );
                 }
                 result.AppendLine();
-                result.Append(s5_template);
+                result.Append(LocRM.GetString("detailed_s5_template"));
             }
             else
             {
-                result.Append(empty_template);
+                result.Append(detailed_empty_template);
             }
 
             return result.ToString();
@@ -260,6 +302,20 @@ namespace EVECharPriceCheck
             {
                 a.ShowDialog();
             }
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeFormLanguage("en");
+            SetCurrenLanguageButtonChecked(sender);
+            UpdateControls(PC);
+        }
+
+        private void russianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeFormLanguage("ru");
+            SetCurrenLanguageButtonChecked(sender);
+            UpdateControls(PC);
         }
     }
 

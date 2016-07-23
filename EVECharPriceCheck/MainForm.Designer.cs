@@ -56,6 +56,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.russianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectRegionBox = new System.Windows.Forms.ComboBox();
@@ -73,335 +76,257 @@
             // 
             // buttonCalculate
             // 
-            this.buttonCalculate.Location = new System.Drawing.Point(457, 225);
+            resources.ApplyResources(this.buttonCalculate, "buttonCalculate");
             this.buttonCalculate.Name = "buttonCalculate";
-            this.buttonCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalculate.TabIndex = 7;
-            this.buttonCalculate.Text = "Calculate";
             this.buttonCalculate.UseVisualStyleBackColor = true;
             this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
             // inputSkillPoints
             // 
+            resources.ApplyResources(this.inputSkillPoints, "inputSkillPoints");
             this.inputSkillPoints.Increment = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.inputSkillPoints.Location = new System.Drawing.Point(457, 28);
             this.inputSkillPoints.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.inputSkillPoints.Name = "inputSkillPoints";
-            this.inputSkillPoints.Size = new System.Drawing.Size(120, 20);
-            this.inputSkillPoints.TabIndex = 1;
-            this.inputSkillPoints.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.inputSkillPoints.ValueChanged += new System.EventHandler(this.tbSkillPoints_ValueChanged);
             // 
             // lbSkillPoints
             // 
-            this.lbSkillPoints.AutoSize = true;
-            this.lbSkillPoints.Location = new System.Drawing.Point(9, 30);
+            resources.ApplyResources(this.lbSkillPoints, "lbSkillPoints");
             this.lbSkillPoints.Name = "lbSkillPoints";
-            this.lbSkillPoints.Size = new System.Drawing.Size(107, 13);
-            this.lbSkillPoints.TabIndex = 3;
-            this.lbSkillPoints.Text = "Character skill points:";
             // 
             // inputSkillInjectorMaxBuy
             // 
+            resources.ApplyResources(this.inputSkillInjectorMaxBuy, "inputSkillInjectorMaxBuy");
             this.inputSkillInjectorMaxBuy.DecimalPlaces = 2;
-            this.inputSkillInjectorMaxBuy.Location = new System.Drawing.Point(457, 112);
             this.inputSkillInjectorMaxBuy.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
             this.inputSkillInjectorMaxBuy.Name = "inputSkillInjectorMaxBuy";
-            this.inputSkillInjectorMaxBuy.Size = new System.Drawing.Size(120, 20);
-            this.inputSkillInjectorMaxBuy.TabIndex = 3;
-            this.inputSkillInjectorMaxBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.inputSkillInjectorMaxBuy.ValueChanged += new System.EventHandler(this.tbSkillInjMaxBuy_ValueChanged);
             // 
             // picturePlex
             // 
+            resources.ApplyResources(this.picturePlex, "picturePlex");
             this.picturePlex.Image = global::EVECharPriceCheck.Properties.Resources.Plex;
-            this.picturePlex.Location = new System.Drawing.Point(12, 170);
-            this.picturePlex.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.picturePlex.Name = "picturePlex";
-            this.picturePlex.Size = new System.Drawing.Size(46, 46);
-            this.picturePlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picturePlex.TabIndex = 6;
             this.picturePlex.TabStop = false;
             // 
             // pictureSkillExtractor
             // 
+            resources.ApplyResources(this.pictureSkillExtractor, "pictureSkillExtractor");
             this.pictureSkillExtractor.Image = global::EVECharPriceCheck.Properties.Resources.SkillExtractor;
-            this.pictureSkillExtractor.Location = new System.Drawing.Point(12, 54);
-            this.pictureSkillExtractor.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.pictureSkillExtractor.Name = "pictureSkillExtractor";
-            this.pictureSkillExtractor.Size = new System.Drawing.Size(46, 46);
-            this.pictureSkillExtractor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSkillExtractor.TabIndex = 5;
             this.pictureSkillExtractor.TabStop = false;
             // 
             // pictureSkillInjector
             // 
+            resources.ApplyResources(this.pictureSkillInjector, "pictureSkillInjector");
             this.pictureSkillInjector.Image = global::EVECharPriceCheck.Properties.Resources.SkillInjector;
-            this.pictureSkillInjector.Location = new System.Drawing.Point(12, 112);
-            this.pictureSkillInjector.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.pictureSkillInjector.Name = "pictureSkillInjector";
-            this.pictureSkillInjector.Size = new System.Drawing.Size(46, 46);
-            this.pictureSkillInjector.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSkillInjector.TabIndex = 4;
             this.pictureSkillInjector.TabStop = false;
             // 
             // inputSkillInjectorMinSell
             // 
+            resources.ApplyResources(this.inputSkillInjectorMinSell, "inputSkillInjectorMinSell");
             this.inputSkillInjectorMinSell.DecimalPlaces = 2;
-            this.inputSkillInjectorMinSell.Location = new System.Drawing.Point(457, 138);
             this.inputSkillInjectorMinSell.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
             this.inputSkillInjectorMinSell.Name = "inputSkillInjectorMinSell";
-            this.inputSkillInjectorMinSell.Size = new System.Drawing.Size(120, 20);
-            this.inputSkillInjectorMinSell.TabIndex = 4;
-            this.inputSkillInjectorMinSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.inputSkillInjectorMinSell.ValueChanged += new System.EventHandler(this.tbSkillInjMinSell_ValueChanged);
             // 
             // inputSkillExtractorMinSell
             // 
+            resources.ApplyResources(this.inputSkillExtractorMinSell, "inputSkillExtractorMinSell");
             this.inputSkillExtractorMinSell.DecimalPlaces = 2;
-            this.inputSkillExtractorMinSell.Location = new System.Drawing.Point(457, 67);
             this.inputSkillExtractorMinSell.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
             this.inputSkillExtractorMinSell.Name = "inputSkillExtractorMinSell";
-            this.inputSkillExtractorMinSell.Size = new System.Drawing.Size(120, 20);
-            this.inputSkillExtractorMinSell.TabIndex = 2;
-            this.inputSkillExtractorMinSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.inputSkillExtractorMinSell.ValueChanged += new System.EventHandler(this.tbSkillExMinSell_ValueChanged);
             // 
             // inputPlexMinSell
             // 
+            resources.ApplyResources(this.inputPlexMinSell, "inputPlexMinSell");
             this.inputPlexMinSell.DecimalPlaces = 2;
-            this.inputPlexMinSell.Location = new System.Drawing.Point(457, 183);
             this.inputPlexMinSell.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
             this.inputPlexMinSell.Name = "inputPlexMinSell";
-            this.inputPlexMinSell.Size = new System.Drawing.Size(120, 20);
-            this.inputPlexMinSell.TabIndex = 5;
-            this.inputPlexMinSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.inputPlexMinSell.ValueChanged += new System.EventHandler(this.tbPlexMinSell_ValueChanged);
             // 
             // lbSkillInjMaxBuy
             // 
-            this.lbSkillInjMaxBuy.AutoSize = true;
-            this.lbSkillInjMaxBuy.Location = new System.Drawing.Point(64, 114);
+            resources.ApplyResources(this.lbSkillInjMaxBuy, "lbSkillInjMaxBuy");
             this.lbSkillInjMaxBuy.Name = "lbSkillInjMaxBuy";
-            this.lbSkillInjMaxBuy.Size = new System.Drawing.Size(381, 13);
-            this.lbSkillInjMaxBuy.TabIndex = 11;
-            this.lbSkillInjMaxBuy.Text = "Skill Injector MaxBuy market price (the price at which you can sell Skill Injecto" +
-    "r):";
             // 
             // lbSkillInjMinSell
             // 
-            this.lbSkillInjMinSell.AutoSize = true;
-            this.lbSkillInjMinSell.Location = new System.Drawing.Point(64, 140);
+            resources.ApplyResources(this.lbSkillInjMinSell, "lbSkillInjMinSell");
             this.lbSkillInjMinSell.Name = "lbSkillInjMinSell";
-            this.lbSkillInjMinSell.Size = new System.Drawing.Size(379, 13);
-            this.lbSkillInjMinSell.TabIndex = 12;
-            this.lbSkillInjMinSell.Text = "Skill Injector MinSell market price (the price at which you can buy Skill Injecto" +
-    "r):";
             // 
             // lbSkillExMinSell
             // 
-            this.lbSkillExMinSell.AutoSize = true;
-            this.lbSkillExMinSell.Location = new System.Drawing.Point(64, 69);
+            resources.ApplyResources(this.lbSkillExMinSell, "lbSkillExMinSell");
             this.lbSkillExMinSell.Name = "lbSkillExMinSell";
-            this.lbSkillExMinSell.Size = new System.Drawing.Size(393, 13);
-            this.lbSkillExMinSell.TabIndex = 13;
-            this.lbSkillExMinSell.Text = "Skill Extractor MinSell market price (the price at which you can buy Skill Extrac" +
-    "tor):";
             // 
             // lbPlexMinSell
             // 
-            this.lbPlexMinSell.AutoSize = true;
-            this.lbPlexMinSell.Location = new System.Drawing.Point(64, 185);
+            resources.ApplyResources(this.lbPlexMinSell, "lbPlexMinSell");
             this.lbPlexMinSell.Name = "lbPlexMinSell";
-            this.lbPlexMinSell.Size = new System.Drawing.Size(319, 13);
-            this.lbPlexMinSell.TabIndex = 14;
-            this.lbPlexMinSell.Text = "PLEX MinSell market price (the price at which you can buy PLEX):";
             // 
             // buttonGetPrices
             // 
-            this.buttonGetPrices.Location = new System.Drawing.Point(153, 225);
+            resources.ApplyResources(this.buttonGetPrices, "buttonGetPrices");
             this.buttonGetPrices.Name = "buttonGetPrices";
-            this.buttonGetPrices.Size = new System.Drawing.Size(76, 23);
-            this.buttonGetPrices.TabIndex = 6;
-            this.buttonGetPrices.Text = "Get prices";
             this.buttonGetPrices.UseVisualStyleBackColor = true;
             this.buttonGetPrices.Click += new System.EventHandler(this.buttonGetPrices_Click);
             // 
             // textSkillExtractorMinSellValue
             // 
+            resources.ApplyResources(this.textSkillExtractorMinSellValue, "textSkillExtractorMinSellValue");
             this.textSkillExtractorMinSellValue.ForeColor = System.Drawing.Color.ForestGreen;
-            this.textSkillExtractorMinSellValue.Location = new System.Drawing.Point(583, 69);
             this.textSkillExtractorMinSellValue.Name = "textSkillExtractorMinSellValue";
-            this.textSkillExtractorMinSellValue.Size = new System.Drawing.Size(56, 13);
-            this.textSkillExtractorMinSellValue.TabIndex = 16;
-            this.textSkillExtractorMinSellValue.Text = "0";
             // 
             // textSkillInjectorMaxBuyValue
             // 
+            resources.ApplyResources(this.textSkillInjectorMaxBuyValue, "textSkillInjectorMaxBuyValue");
             this.textSkillInjectorMaxBuyValue.ForeColor = System.Drawing.Color.ForestGreen;
-            this.textSkillInjectorMaxBuyValue.Location = new System.Drawing.Point(583, 114);
             this.textSkillInjectorMaxBuyValue.Name = "textSkillInjectorMaxBuyValue";
-            this.textSkillInjectorMaxBuyValue.Size = new System.Drawing.Size(56, 13);
-            this.textSkillInjectorMaxBuyValue.TabIndex = 17;
-            this.textSkillInjectorMaxBuyValue.Text = "0";
             // 
             // textSkillInjectorMinSellValue
             // 
+            resources.ApplyResources(this.textSkillInjectorMinSellValue, "textSkillInjectorMinSellValue");
             this.textSkillInjectorMinSellValue.ForeColor = System.Drawing.Color.ForestGreen;
-            this.textSkillInjectorMinSellValue.Location = new System.Drawing.Point(583, 140);
             this.textSkillInjectorMinSellValue.Name = "textSkillInjectorMinSellValue";
-            this.textSkillInjectorMinSellValue.Size = new System.Drawing.Size(56, 13);
-            this.textSkillInjectorMinSellValue.TabIndex = 18;
-            this.textSkillInjectorMinSellValue.Text = "0";
             // 
             // textPlexMinSellValue
             // 
+            resources.ApplyResources(this.textPlexMinSellValue, "textPlexMinSellValue");
             this.textPlexMinSellValue.ForeColor = System.Drawing.Color.ForestGreen;
-            this.textPlexMinSellValue.Location = new System.Drawing.Point(583, 185);
             this.textPlexMinSellValue.Name = "textPlexMinSellValue";
-            this.textPlexMinSellValue.Size = new System.Drawing.Size(56, 13);
-            this.textPlexMinSellValue.TabIndex = 19;
-            this.textPlexMinSellValue.Text = "0";
             // 
             // textSkillPointsValue
             // 
+            resources.ApplyResources(this.textSkillPointsValue, "textSkillPointsValue");
             this.textSkillPointsValue.ForeColor = System.Drawing.Color.ForestGreen;
-            this.textSkillPointsValue.Location = new System.Drawing.Point(583, 30);
             this.textSkillPointsValue.Name = "textSkillPointsValue";
-            this.textSkillPointsValue.Size = new System.Drawing.Size(56, 13);
-            this.textSkillPointsValue.TabIndex = 20;
-            this.textSkillPointsValue.Text = "0";
             // 
             // rtbShortDescription
             // 
+            resources.ApplyResources(this.rtbShortDescription, "rtbShortDescription");
             this.rtbShortDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbShortDescription.Location = new System.Drawing.Point(12, 267);
             this.rtbShortDescription.Name = "rtbShortDescription";
             this.rtbShortDescription.ReadOnly = true;
             this.rtbShortDescription.ShortcutsEnabled = false;
-            this.rtbShortDescription.Size = new System.Drawing.Size(627, 39);
-            this.rtbShortDescription.TabIndex = 21;
             this.rtbShortDescription.TabStop = false;
-            this.rtbShortDescription.Text = "";
             // 
             // rtbDetailedDescriprion
             // 
+            resources.ApplyResources(this.rtbDetailedDescriprion, "rtbDetailedDescriprion");
             this.rtbDetailedDescriprion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbDetailedDescriprion.Location = new System.Drawing.Point(12, 325);
             this.rtbDetailedDescriprion.Name = "rtbDetailedDescriprion";
             this.rtbDetailedDescriprion.ReadOnly = true;
             this.rtbDetailedDescriprion.ShortcutsEnabled = false;
-            this.rtbDetailedDescriprion.Size = new System.Drawing.Size(627, 168);
-            this.rtbDetailedDescriprion.TabIndex = 22;
             this.rtbDetailedDescriprion.TabStop = false;
-            this.rtbDetailedDescriprion.Text = "";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 251);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Short description:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 309);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Detailed description:";
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.languageToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(656, 24);
-            this.menuStrip1.TabIndex = 25;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // languageToolStripMenuItem
+            // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.russianToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            // 
+            // englishToolStripMenuItem
+            // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // russianToolStripMenuItem
+            // 
+            resources.ApplyResources(this.russianToolStripMenuItem, "russianToolStripMenuItem");
+            this.russianToolStripMenuItem.Name = "russianToolStripMenuItem";
+            this.russianToolStripMenuItem.Click += new System.EventHandler(this.russianToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // selectRegionBox
             // 
+            resources.ApplyResources(this.selectRegionBox, "selectRegionBox");
             this.selectRegionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectRegionBox.FormattingEnabled = true;
-            this.selectRegionBox.Location = new System.Drawing.Point(59, 227);
             this.selectRegionBox.Name = "selectRegionBox";
-            this.selectRegionBox.Size = new System.Drawing.Size(88, 21);
-            this.selectRegionBox.TabIndex = 26;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 230);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Region:";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 505);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.selectRegionBox);
             this.Controls.Add(this.label2);
@@ -430,11 +355,9 @@
             this.Controls.Add(this.buttonCalculate);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "EVE Character price check";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.inputSkillPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputSkillInjectorMaxBuy)).EndInit();
@@ -484,6 +407,9 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ComboBox selectRegionBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem russianToolStripMenuItem;
     }
 }
 

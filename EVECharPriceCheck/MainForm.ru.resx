@@ -118,181 +118,95 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="inputSkillInjectorMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 138</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillExtractor.Name" xml:space="preserve">
-    <value>pictureSkillExtractor</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="inputSkillExtractorMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+  <data name="buttonCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
   </data>
   <data name="buttonCalculate.Text" xml:space="preserve">
-    <value>Calculate</value>
+    <value>Рассчитать</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbSkillPoints.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 13</value>
   </data>
-  <data name="&gt;&gt;buttonCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbSkillPoints.Text" xml:space="preserve">
+    <value>Количество очков умений персонажа:</value>
   </data>
-  <data name="&gt;&gt;inputPlexMinSell.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="lbSkillInjMaxBuy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 13</value>
   </data>
-  <data name="&gt;&gt;textSkillExtractorMinSellValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbSkillInjMaxBuy.Text" xml:space="preserve">
+    <value>Цена, по которой вы можете продать СП-инъектор:</value>
   </data>
-  <data name="&gt;&gt;textSkillExtractorMinSellValue.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lbSkillInjMinSell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 13</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbSkillPoints.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbSkillExMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 69</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
-    <value>helpToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;rtbShortDescription.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;picturePlex.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="rtbShortDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 39</value>
-  </data>
-  <data name="&gt;&gt;buttonGetPrices.Name" xml:space="preserve">
-    <value>buttonGetPrices</value>
-  </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbSkillInjMinSell.Text" xml:space="preserve">
+    <value>Цена, по которой вы можете купить СП-инъектор:</value>
   </data>
   <data name="lbSkillExMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>393, 13</value>
+    <value>273, 13</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Region:</value>
+  <data name="lbSkillExMinSell.Text" xml:space="preserve">
+    <value>Цена, по которой вы можете купить СП-экстрактор:</value>
   </data>
-  <data name="&gt;&gt;inputSkillInjectorMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lbPlexMinSell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 13</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbPlexMinSell.Text" xml:space="preserve">
+    <value>Цена, по которой вы можете купить PLEX:</value>
   </data>
-  <data name="&gt;&gt;selectRegionBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonGetPrices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
   </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Name" xml:space="preserve">
-    <value>russianToolStripMenuItem</value>
+  <data name="buttonGetPrices.Text" xml:space="preserve">
+    <value>Получить цены</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>656, 24</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 13</value>
   </data>
-  <data name="&gt;&gt;lbSkillInjMaxBuy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Короткое описание:</value>
   </data>
-  <data name="inputSkillInjectorMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="rtbDetailedDescriprion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 168</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMaxBuy.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;rtbDetailedDescriprion.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbSkillPoints.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillExtractor.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillExtractor.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Detailed description:</value>
+    <value>Детальная информация:</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>EVE Character price check</value>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Файл</value>
   </data>
-  <data name="&gt;&gt;inputSkillInjectorMaxBuy.Name" xml:space="preserve">
-    <value>inputSkillInjectorMaxBuy</value>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="textSkillPointsValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
   </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
-    <value>languageToolStripMenuItem</value>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
   </data>
-  <data name="&gt;&gt;lbSkillInjMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Помощь</value>
   </data>
-  <data name="&gt;&gt;lbSkillExMinSell.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="inputSkillPoints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 28</value>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
   </data>
-  <data name="buttonCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 225</value>
-  </data>
-  <data name="&gt;&gt;textPlexMinSellValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMaxBuy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="inputSkillExtractorMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="inputSkillExtractorMinSell.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Регион:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1153,616 +1067,4 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="&gt;&gt;lbPlexMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inputPlexMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pictureSkillInjector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 46</value>
-  </data>
-  <data name="picturePlex.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 170</value>
-  </data>
-  <data name="&gt;&gt;lbSkillPoints.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="inputPlexMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="lbSkillPoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMinSellValue.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textSkillExtractorMinSellValue.Name" xml:space="preserve">
-    <value>textSkillExtractorMinSellValue</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMaxBuyValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputPlexMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillInjector.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMaxBuyValue.Name" xml:space="preserve">
-    <value>textSkillInjectorMaxBuyValue</value>
-  </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="pictureSkillInjector.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 6</value>
-  </data>
-  <data name="rtbDetailedDescriprion.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="textPlexMinSellValue.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbPlexMinSell.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="textSkillPointsValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 30</value>
-  </data>
-  <data name="pictureSkillInjector.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;rtbShortDescription.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMaxBuy.Name" xml:space="preserve">
-    <value>lbSkillInjMaxBuy</value>
-  </data>
-  <data name="textSkillPointsValue.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="buttonGetPrices.Text" xml:space="preserve">
-    <value>Get prices</value>
-  </data>
-  <data name="lbPlexMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;rtbDetailedDescriprion.Name" xml:space="preserve">
-    <value>rtbDetailedDescriprion</value>
-  </data>
-  <data name="pictureSkillInjector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 112</value>
-  </data>
-  <data name="lbSkillInjMaxBuy.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonCalculate.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pictureSkillExtractor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 6</value>
-  </data>
-  <data name="&gt;&gt;lbPlexMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 251</value>
-  </data>
-  <data name="lbSkillPoints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 30</value>
-  </data>
-  <data name="&gt;&gt;rtbShortDescription.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="lbSkillInjMaxBuy.Text" xml:space="preserve">
-    <value>Skill Injector MaxBuy market price (the price at which you can sell Skill Injector):</value>
-  </data>
-  <data name="&gt;&gt;textSkillPointsValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rtbShortDescription.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="rtbShortDescription.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textSkillPointsValue.Name" xml:space="preserve">
-    <value>textSkillPointsValue</value>
-  </data>
-  <data name="buttonGetPrices.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 225</value>
-  </data>
-  <data name="inputPlexMinSell.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fileToolStripMenuItem</value>
-  </data>
-  <data name="lbSkillInjMaxBuy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 114</value>
-  </data>
-  <data name="textSkillExtractorMinSellValue.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;picturePlex.Name" xml:space="preserve">
-    <value>picturePlex</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMaxBuy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbSkillInjMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="textSkillExtractorMinSellValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 69</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inputPlexMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 183</value>
-  </data>
-  <data name="pictureSkillInjector.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="lbPlexMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 185</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 13</value>
-  </data>
-  <data name="textSkillInjectorMinSellValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 140</value>
-  </data>
-  <data name="&gt;&gt;picturePlex.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;inputSkillExtractorMinSell.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMaxBuyValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureSkillExtractor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 46</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textSkillInjectorMinSellValue.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="textSkillExtractorMinSellValue.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="picturePlex.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 6</value>
-  </data>
-  <data name="&gt;&gt;lbSkillPoints.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textSkillExtractorMinSellValue.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lbPlexMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 13</value>
-  </data>
-  <data name="&gt;&gt;inputSkillPoints.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="inputSkillInjectorMaxBuy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMinSellValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="inputSkillInjectorMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="selectRegionBox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="textPlexMinSellValue.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="lbSkillInjMaxBuy.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;textPlexMinSellValue.Name" xml:space="preserve">
-    <value>textPlexMinSellValue</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillInjector.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectRegionBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishToolStripMenuItem</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;inputSkillExtractorMinSell.Name" xml:space="preserve">
-    <value>inputSkillExtractorMinSell</value>
-  </data>
-  <data name="&gt;&gt;inputPlexMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="picturePlex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 46</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbPlexMinSell.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="inputSkillPoints.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonCalculate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
-  </data>
-  <data name="selectRegionBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 227</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="inputSkillExtractorMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 67</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 230</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="lbSkillPoints.Text" xml:space="preserve">
-    <value>Character skill points:</value>
-  </data>
-  <data name="textSkillExtractorMinSellValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillInjector.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="pictureSkillExtractor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 54</value>
-  </data>
-  <data name="selectRegionBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 21</value>
-  </data>
-  <data name="lbSkillPoints.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputSkillPoints.Name" xml:space="preserve">
-    <value>inputSkillPoints</value>
-  </data>
-  <data name="inputSkillInjectorMaxBuy.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="textSkillInjectorMaxBuyValue.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Russian</value>
-  </data>
-  <data name="&gt;&gt;inputSkillExtractorMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textPlexMinSellValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 185</value>
-  </data>
-  <data name="&gt;&gt;buttonGetPrices.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lbPlexMinSell.Text" xml:space="preserve">
-    <value>PLEX MinSell market price (the price at which you can buy PLEX):</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMinSell.Name" xml:space="preserve">
-    <value>inputSkillInjectorMinSell</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="lbSkillExMinSell.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pictureSkillExtractor.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;buttonCalculate.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="textPlexMinSellValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputPlexMinSell.Name" xml:space="preserve">
-    <value>inputPlexMinSell</value>
-  </data>
-  <data name="&gt;&gt;textSkillPointsValue.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lbSkillInjMinSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 13</value>
-  </data>
-  <data name="buttonGetPrices.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="inputSkillInjectorMaxBuy.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillExtractor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
-  </data>
-  <data name="&gt;&gt;buttonGetPrices.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
-  </data>
-  <data name="buttonGetPrices.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="rtbDetailedDescriprion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 325</value>
-  </data>
-  <data name="textSkillPointsValue.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textSkillPointsValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMaxBuy.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Short description:</value>
-  </data>
-  <data name="&gt;&gt;lbSkillExMinSell.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textSkillInjectorMaxBuyValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="&gt;&gt;lbSkillPoints.Name" xml:space="preserve">
-    <value>lbSkillPoints</value>
-  </data>
-  <data name="textSkillInjectorMaxBuyValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 114</value>
-  </data>
-  <data name="&gt;&gt;buttonCalculate.Name" xml:space="preserve">
-    <value>buttonCalculate</value>
-  </data>
-  <data name="&gt;&gt;selectRegionBox.Name" xml:space="preserve">
-    <value>selectRegionBox</value>
-  </data>
-  <data name="&gt;&gt;inputSkillExtractorMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectRegionBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbSkillInjMinSell.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="inputSkillPoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="pictureSkillExtractor.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="rtbDetailedDescriprion.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;textPlexMinSellValue.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMaxBuy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;buttonCalculate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbSkillInjMinSell.Text" xml:space="preserve">
-    <value>Skill Injector MinSell market price (the price at which you can buy Skill Injector):</value>
-  </data>
-  <data name="&gt;&gt;rtbDetailedDescriprion.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputSkillPoints.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbPlexMinSell.Name" xml:space="preserve">
-    <value>lbPlexMinSell</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 309</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>656, 505</value>
-  </data>
-  <data name="&gt;&gt;lbSkillExMinSell.Name" xml:space="preserve">
-    <value>lbSkillExMinSell</value>
-  </data>
-  <data name="textSkillInjectorMaxBuyValue.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="picturePlex.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
-    <value>exitToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMinSellValue.Name" xml:space="preserve">
-    <value>textSkillInjectorMinSellValue</value>
-  </data>
-  <data name="picturePlex.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;inputSkillPoints.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbSkillExMinSell.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;textPlexMinSellValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
-  </data>
-  <data name="lbSkillInjMaxBuy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 13</value>
-  </data>
-  <data name="&gt;&gt;inputSkillInjectorMinSell.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="inputSkillPoints.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMinSell.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;lbSkillExMinSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureSkillInjector.Name" xml:space="preserve">
-    <value>pictureSkillInjector</value>
-  </data>
-  <data name="&gt;&gt;lbSkillInjMinSell.Name" xml:space="preserve">
-    <value>lbSkillInjMinSell</value>
-  </data>
-  <data name="lbSkillExMinSell.Text" xml:space="preserve">
-    <value>Skill Extractor MinSell market price (the price at which you can buy Skill Extractor):</value>
-  </data>
-  <data name="inputSkillInjectorMinSell.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="lbSkillInjMinSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 140</value>
-  </data>
-  <data name="textSkillInjectorMinSellValue.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;picturePlex.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="inputSkillInjectorMaxBuy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 112</value>
-  </data>
-  <data name="&gt;&gt;buttonGetPrices.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMinSellValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textSkillInjectorMinSellValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="rtbShortDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 267</value>
-  </data>
-  <data name="&gt;&gt;rtbShortDescription.Name" xml:space="preserve">
-    <value>rtbShortDescription</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;rtbDetailedDescriprion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="&gt;&gt;textSkillInjectorMaxBuyValue.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

@@ -117,14 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SkillInjector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SkillInjector.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s0_template" xml:space="preserve">
+    <value>Нижняя граница цены персонажа 0 ISK. Реальная цена на этого персонажа будет зависить от конкретного набора прокачанных скилов.</value>
   </data>
-  <data name="SkillExtractor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SkillExtractor.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s1_template" xml:space="preserve">
+    <value>Нижняя граница цены {0} ISK - это цена, ниже которой продавцу не имеет смысла продавать персонажа. Она рассчитана исходя из того, что можно купить {1} СП-Экстрактор{6} по {2} ISK{7} ({1} * {2} ≈ {3}), извлечь СП из персонажа,и продать получившиеся {1} СП-Инжектор{6} по {4} ISK{7}, что принесет {1} * {4} ≈ {5}. Прибыль продавца в этом случае составит {5} - {3} ≈ {0} ISK.</value>
   </data>
-  <data name="Plex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Plex.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s2_template" xml:space="preserve">
+    <value>Верхняя граница цены {0} ISK - это цена, выше которой покупателю нет смысла платить. Она рассчитана исходя из того, что можно купить {1} СП-инжекторов по {2} ISK ({1} * {2} ≈ {0}) и создать подобного персонажа самостоятельно.</value>
+  </data>
+  <data name="detailed_s3_template" xml:space="preserve">
+    <value>Внимание! Это только "техническая" оценка цены данного персонажа.</value>
+  </data>
+  <data name="detailed_s4_template" xml:space="preserve">
+    <value>Если вы продаете данного персонажа первоначально запрошеная сумма может быть больше, и начинаться с {0} + {1} = {2} ISK. Сумма {1} это цена {3} СП-инжекторов, необходимых чтобы получить персонажа приблизительно с {4} СП.</value>
+  </data>
+  <data name="detailed_s5_template" xml:space="preserve">
+    <value>Верхняя граница цены может отличаться поскольку для тренировки персонажа требуются книги, также не учитывается имя персонажа, его история, отношения с фракциями, ассеты персонажа и т.д. Также неоходимо учитывать торговые навыки для покупки/продажи СП-экстракторов/СП-инжекторов в маркете, а также наличие необходимого их количества по нужной цене.</value>
+  </data>
+  <data name="eng_multi_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eng_multi_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="short_empty_template" xml:space="preserve">
+    <value>Похоже,что данный персонаж ничего не стоит.</value>
+  </data>
+  <data name="short_s1_template" xml:space="preserve">
+    <value>Цена персонажа от {0} до {1} ISK.</value>
+  </data>
+  <data name="short_s2_template" xml:space="preserve">
+    <value>Что эквивалентно приблизительно от {0} до {1} PLEX.</value>
   </data>
 </root>

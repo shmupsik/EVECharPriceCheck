@@ -117,14 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SkillInjector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SkillInjector.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s0_template" xml:space="preserve">
+    <value>The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.</value>
   </data>
-  <data name="SkillExtractor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SkillExtractor.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s1_template" xml:space="preserve">
+    <value>The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.</value>
   </data>
-  <data name="Plex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Plex.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="detailed_s2_template" xml:space="preserve">
+    <value>The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.</value>
+  </data>
+  <data name="detailed_s3_template" xml:space="preserve">
+    <value>Note, this is only techical price check.</value>
+  </data>
+  <data name="detailed_s4_template" xml:space="preserve">
+    <value>While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.</value>
+  </data>
+  <data name="detailed_s5_template" xml:space="preserve">
+    <value>The upper price may vary due to skillboks required to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.</value>
+  </data>
+  <data name="eng_multi_1" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="eng_multi_2" xml:space="preserve">
+    <value> each</value>
+  </data>
+  <data name="short_empty_template" xml:space="preserve">
+    <value>Seems that character costs nothing.</value>
+  </data>
+  <data name="short_s1_template" xml:space="preserve">
+    <value>The character price is from {0} to {1} ISK.</value>
+  </data>
+  <data name="short_s2_template" xml:space="preserve">
+    <value>Which is equivalent to approx. {0} to {1} PLEX.</value>
   </data>
 </root>
