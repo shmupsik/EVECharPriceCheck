@@ -17,7 +17,6 @@ namespace EVECharPriceCheck
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
             //this.textBoxDescription.Text = AssemblyDescription;
 
                 }
@@ -101,5 +100,10 @@ namespace EVECharPriceCheck
             }
         }
         #endregion
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/shmupsik/EVECharPriceCheck/");
+        }
     }
 }
