@@ -104,7 +104,7 @@ namespace EVECharPriceCheck
 
         private String FormatDetailedDescription(EveCharPriceCalculator calculator)
         {
-            String lowestZero_template = "The lowest character price starting from 0 ISK. That is not great character, the real price on it will depends on actual trained skills.";
+            String lowestZero_template = "The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.";
             String s1_template = "The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.";
             String s2_template = "The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.";
             String s3_template = "Note, this is only techical price check.";
