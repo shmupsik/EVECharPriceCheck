@@ -60,9 +60,13 @@ namespace EVECharPriceCheck
             //resources.ApplyResources(this, "$this", newCultureInfo);
 
             //Для элементов статус стрипа устанавливаем также установки локализации
-            foreach (var item in menuStrip1.Items.Cast<ToolStripItem>().Where(item => (item is ToolStripStatusLabel) != false))
+            foreach (ToolStripMenuItem item in menuStrip1.Items)
             {
                 resources.ApplyResources(item, item.Name, newCultureInfo);
+                foreach (ToolStripMenuItem subitem in item.DropDownItems)
+                {
+                    resources.ApplyResources(subitem, subitem.Name, newCultureInfo);
+                }
             }
 
             ////Устанавливаем текст на кнопке, которая была изображена на скриншоте раньше название локализации
@@ -121,12 +125,38 @@ namespace EVECharPriceCheck
             UpdateControls(sender as EveCharPriceCalculator);
         }
 
+        private String Plural(int Value, String Set)
+        {
+            String[] SetValues = Set.Split('/');
+
+            if (SetValues.Count() != 3)
+            {
+                return Set;
+            }
+
+            int AbsValue = Math.Abs(Value);
+            if (AbsValue == 0)
+            {
+                return SetValues[2];
+            }
+            else if (AbsValue == 1)
+            {
+                return SetValues[0];
+            }
+            else if ((AbsValue > 1) && (AbsValue <= 4))
+            {
+                return SetValues[1];
+            }
+            else if (AbsValue > 4)
+            {
+                return SetValues[2];
+            }
+
+            return Set;
+        }
+
         private String FormatShortDescription(EveCharPriceCalculator calculator)
         {
-            String short_s1_template = "The character price is from {0} to {1} ISK. ";
-            String short_s2_template = "Which is equivalent to approx. {0} to {1} PLEX.";
-            String short_empty_template = "Seems that character costs nothing.";
-
             StringBuilder result = new StringBuilder();
 
             if (calculator.ResultIskMaxPrice > 0)
@@ -145,13 +175,6 @@ namespace EVECharPriceCheck
 
         private String FormatDetailedDescription(EveCharPriceCalculator calculator)
         {
-            //String lowestZero_template = "The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.";
-            String detailed_s0_template = LocRM.GetString("detailed_s0_template");
-            String detailed_s1_template = "The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.";
-            String detailed_s2_template = "The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.";
-            String detailed_s3_template = "Note, this is only techical price check.";
-            String detailed_s4_template = "While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.";
-            String detailed_s5_template = "The upper price may vary due to skillboks needed to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.";
             String detailed_empty_template = "";
 
             StringBuilder result = new StringBuilder();
@@ -168,7 +191,8 @@ namespace EVECharPriceCheck
                         EveCharPriceCalculator.FormatValue(calculator.SkillExtractorMinSellPrice * calculator.ResultSkillExtractorsItemsRequired),
                         EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMaxBuyPrice),
                         EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMaxBuyPrice * calculator.ResultSkillExtractorsItemsRequired),
-                        (calculator.ResultSkillExtractorsItemsRequired > 1 ? LocRM.GetString("eng_multi_1") : ""),
+                        Plural(calculator.ResultSkillExtractorsItemsRequired, LocRM.GetString("item_SkillExtractor")),
+                        Plural(calculator.ResultSkillExtractorsItemsRequired, LocRM.GetString("item_SkillInjector")),
                         (calculator.ResultSkillExtractorsItemsRequired > 1 ? LocRM.GetString("eng_multi_2") : "")
                         }
                     );
@@ -186,7 +210,8 @@ namespace EVECharPriceCheck
                     {
                     EveCharPriceCalculator.FormatValue(calculator.ResultIskMaxPrice),
                     calculator.ResultSkillInjectorsItemsRequired,
-                    EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMinSellPrice)
+                    EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMinSellPrice),
+                    Plural(calculator.ResultSkillInjectorsItemsRequired, LocRM.GetString("item_SkillInjector")),
                     }
                 );
                 result.AppendLine();
@@ -288,6 +313,21 @@ namespace EVECharPriceCheck
             UpdateCalculator(PC);
 
             FillRegionComboBox();
+
+            bool IsLanguageFound = false;
+            foreach (ToolStripMenuItem languageButton in languageToolStripMenuItem.DropDownItems)
+            {
+                if (languageButton.Tag.Equals(Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName))
+                {
+                    languageButton.Checked = true;
+                    IsLanguageFound = true;
+                }
+            }
+            if (!IsLanguageFound)
+            {
+                englishToolStripMenuItem_Click(englishToolStripMenuItem, EventArgs.Empty);
+            }
+
         }
 
 
@@ -306,14 +346,14 @@ namespace EVECharPriceCheck
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChangeFormLanguage("en");
+            ChangeFormLanguage((sender as ToolStripMenuItem).Tag.ToString());
             SetCurrenLanguageButtonChecked(sender);
             UpdateControls(PC);
         }
 
         private void russianToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChangeFormLanguage("ru");
+            ChangeFormLanguage((sender as ToolStripMenuItem).Tag.ToString());
             SetCurrenLanguageButtonChecked(sender);
             UpdateControls(PC);
         }

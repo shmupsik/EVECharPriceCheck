@@ -70,7 +70,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} Skill Extractor{6} by {2} ISK {7} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} Skill Injector{6} by {4} ISK {7}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK..
+        ///   Ищет локализованную строку, похожую на The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} {6} by {2} ISK {8} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} {7} by {4} ISK {8}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK..
         /// </summary>
         internal static string detailed_s1_template {
             get {
@@ -79,7 +79,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} Skill Injectors {2} ISK each ({1} * {2} ≈ {0}) and train such character himself..
+        ///   Ищет локализованную строку, похожую на The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each ({1} * {2} ≈ {0}) and train such character himself..
         /// </summary>
         internal static string detailed_s2_template {
             get {
@@ -129,6 +129,33 @@ namespace EVECharPriceCheck {
         internal static string eng_multi_2 {
             get {
                 return ResourceManager.GetString("eng_multi_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на PLEX/PLEX/PLEX.
+        /// </summary>
+        internal static string item_Plex {
+            get {
+                return ResourceManager.GetString("item_Plex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Skill Extractor/Skill Extractors/Skill Extractors.
+        /// </summary>
+        internal static string item_SkillExtractor {
+            get {
+                return ResourceManager.GetString("item_SkillExtractor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Skill Injector/Skill Injectors/Skill Injectors.
+        /// </summary>
+        internal static string item_SkillInjector {
+            get {
+                return ResourceManager.GetString("item_SkillInjector", resourceCulture);
             }
         }
         
