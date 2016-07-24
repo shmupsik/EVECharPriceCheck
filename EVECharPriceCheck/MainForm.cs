@@ -69,9 +69,6 @@ namespace EVECharPriceCheck
                 }
             }
 
-            ////Устанавливаем текст на кнопке, которая была изображена на скриншоте раньше название локализации
-            //TSDD_Language.Text = newCultureInfo.NativeName;
-
         }
 
         private void SetCurrenLanguageButtonChecked(object sender)
