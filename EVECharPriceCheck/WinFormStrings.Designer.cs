@@ -61,7 +61,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills..
+        ///   Ищет локализованную строку, похожую на   The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills..
         /// </summary>
         internal static string detailed_s0_template {
             get {
@@ -70,7 +70,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} {6} by {2} ISK {8} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} {7} by {4} ISK {8}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK..
+        ///   Ищет локализованную строку, похожую на   The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} {6} by {2} ISK {8} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} {7} by {4} ISK {8}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK..
         /// </summary>
         internal static string detailed_s1_template {
             get {
@@ -79,7 +79,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each ({1} * {2} ≈ {0}) and train such character himself..
+        ///   Ищет локализованную строку, похожую на   The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each ({1} * {2} ≈ {0}) and train such character himself..
         /// </summary>
         internal static string detailed_s2_template {
             get {
@@ -88,7 +88,16 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Note, this is only techical price check..
+        ///   Ищет локализованную строку, похожую на   The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each, also he will need to buy required Skill Books which cost about {4} ({1} * {2} + {4} ≈ {0}) and train such character himself..
+        /// </summary>
+        internal static string detailed_s2_template_skillbooks {
+            get {
+                return ResourceManager.GetString("detailed_s2_template_skillbooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на   Note, this is only techical price check..
         /// </summary>
         internal static string detailed_s3_template {
             get {
@@ -97,7 +106,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points..
+        ///   Ищет локализованную строку, похожую на   While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points..
         /// </summary>
         internal static string detailed_s4_template {
             get {
@@ -106,11 +115,29 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на The upper price may vary due to skillboks required to inject skills, character name, corp history, faction standings, character stuff etc. Also don&apos;t forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price..
+        ///   Ищет локализованную строку, похожую на   While selling this character the started ask price should be higher and may start from about {0} + {1} + {5} = {2} ISK. Where the {1} sum - is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points, the {5} sum - is the cost of skill books, injected into character..
+        /// </summary>
+        internal static string detailed_s4_template_skillbooks {
+            get {
+                return ResourceManager.GetString("detailed_s4_template_skillbooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на   The upper price may vary due to skillboks required to inject skills, character name, corp history, faction standings, character stuff etc. Also don&apos;t forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price..
         /// </summary>
         internal static string detailed_s5_template {
             get {
                 return ResourceManager.GetString("detailed_s5_template", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на   The character price may vary due to character name, corp history, faction standings, character stuff etc. Also don&apos;t forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price..
+        /// </summary>
+        internal static string detailed_s5_template_skillbooks {
+            get {
+                return ResourceManager.GetString("detailed_s5_template_skillbooks", resourceCulture);
             }
         }
         
@@ -133,7 +160,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на PLEX/PLEX/PLEX.
+        ///   Ищет локализованную строку, похожую на PLEX/PLEX.
         /// </summary>
         internal static string item_Plex {
             get {
@@ -142,7 +169,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Skill Extractor/Skill Extractors/Skill Extractors.
+        ///   Ищет локализованную строку, похожую на Skill Extractor/Skill Extractors.
         /// </summary>
         internal static string item_SkillExtractor {
             get {
@@ -151,7 +178,7 @@ namespace EVECharPriceCheck {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Skill Injector/Skill Injectors/Skill Injectors.
+        ///   Ищет локализованную строку, похожую на Skill Injector/Skill Injectors.
         /// </summary>
         internal static string item_SkillInjector {
             get {

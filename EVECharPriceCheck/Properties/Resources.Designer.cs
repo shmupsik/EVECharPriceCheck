@@ -61,6 +61,31 @@ namespace EVECharPriceCheck.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;skills xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+        ///    &lt;skill&gt;
+        ///		&lt;typeid&gt;33078&lt;/typeid&gt;
+        ///		&lt;name&gt;Armor Layering&lt;/name&gt;
+        ///		&lt;cost&gt;1000000&lt;/cost&gt;
+        ///		&lt;sellbynpc&gt;true&lt;/sellbynpc&gt;
+        ///	&lt;/skill&gt;
+        ///	&lt;skill&gt;
+        ///		&lt;typeid&gt;24568&lt;/typeid&gt;
+        ///		&lt;name&gt;Capital Remote Armor Repair Systems&lt;/name&gt;
+        ///		&lt;cost&gt;10000000&lt;/cost&gt;
+        ///		&lt;sellbynpc&gt;true&lt;/sellbynpc&gt;
+        ///	&lt;/skill&gt;
+        ///	&lt;skill&gt;
+        ///		&lt;typeid&gt;27936&lt;/typeid&gt;
+        ///		&lt;name&gt;Capital Remote Hull Repair S [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string eve_skills {
+            get {
+                return ResourceManager.GetString("eve_skills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Plex {

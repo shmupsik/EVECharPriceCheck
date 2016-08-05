@@ -18,6 +18,7 @@ namespace EVECharPriceCheck
         private decimal skillInjectorMaxBuyPrice;
         private decimal skillInjectorMinSellPrice;
         private decimal plexMinSellPrice;
+        private decimal injectedSkillsPrice;
 
 
         public decimal SkillExtractorMinSellPrice
@@ -122,8 +123,25 @@ namespace EVECharPriceCheck
             }
         }
 
+        public decimal InjectedSkillsPrice
+        {
+            get
+            {
+                return injectedSkillsPrice;
+            }
+
+            set
+            {
+                injectedSkillsPrice = value;
+                if (!isUpdating)
+                {
+                    Calculate();
+                }
+            }
+        }
+
         #endregion
-        
+
         #region Read-only fields
 
         private decimal resultIskMinPrice;
@@ -199,7 +217,6 @@ namespace EVECharPriceCheck
             }
         }
 
-
         #endregion
 
         public event EventHandler CalculationCompleted;
@@ -216,8 +233,9 @@ namespace EVECharPriceCheck
             resultPlexMaxPrice = 0;
             resultSkillExtractorsItemsRequired = 0;
             resultSkillInjectorsItemsRequired = 0;
+            injectedSkillsPrice = 0;
 
-            skillPoints = EveConstant.NewCharSkillPoints;
+            skillPoints = 0;
             delayHours = 24;
             skillExtractorMinSellPrice = 0;
             skillInjectorMaxBuyPrice = 0;
@@ -304,7 +322,7 @@ namespace EVECharPriceCheck
             {
                 resultSkillInjectorsItemsRequired = 0;
             }
-            resultIskMaxPrice = resultSkillInjectorsItemsRequired * skillInjectorMinSellPrice;
+            resultIskMaxPrice = resultSkillInjectorsItemsRequired * skillInjectorMinSellPrice + injectedSkillsPrice;
             //Calculating Maximum ISK price
 
 
@@ -359,38 +377,8 @@ namespace EVECharPriceCheck
                 suffix.Append("k");
             }
             
-            return String.Format(CultureInfo.CurrentCulture, String.Concat("{0:F", decimals, "} {1}"), value, suffix.ToString()).Trim();
+            return String.Format(String.Concat("{0:F", decimals, "} {1}"), value, suffix.ToString()).Trim();
         }
     }
-
-
-    public static class EveConstant
-    {
-        public static int MinSkillPointsAfterExtraction = 5000000;
-        public static int SkillExtractorExtractPoints = 500000;
-        public static int SkillExtractorDefaultInjectPoints = 500000;
-        public static int NewCharSkillPoints = 400000;
-        public static int AverageSkillPointPerHour = 1900;
-    }
-
-    public class ItemPrice
-    {
-        public string TypeId { get; set; }
-        public decimal MinBuy { get; set; }
-        public decimal MaxBuy { get; set; }
-        public decimal MinSell { get; set; }
-        public decimal MaxSell { get; set; }
-
-        public ItemPrice()
-        {
-            TypeId = "";
-            MinBuy = 0;
-            MaxBuy = 0;
-            MinSell = 0;
-            MaxSell = 0;
-        }
-
-    }
-
 
 }

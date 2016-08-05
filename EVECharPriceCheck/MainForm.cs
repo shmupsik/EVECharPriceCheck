@@ -55,6 +55,10 @@ namespace EVECharPriceCheck
             {
                 resources.ApplyResources(c, c.Name, newCultureInfo);
             }
+            foreach (Control c in this.groupBox1.Controls)
+            {
+                resources.ApplyResources(c, c.Name, newCultureInfo);
+            }
 
             ////Отдельно меняем для тайтла самой формы локализацию
             //resources.ApplyResources(this, "$this", newCultureInfo);
@@ -69,6 +73,7 @@ namespace EVECharPriceCheck
                 }
             }
 
+            UpdateSkillPointsControls();
         }
 
         private void SetCurrenLanguageButtonChecked(object sender)
@@ -115,7 +120,11 @@ namespace EVECharPriceCheck
             }
         }
 
-
+        private void UpdateSkillPointsControls()
+        {
+            inputSkillPoints.Enabled = radioButton1.Checked;
+            inputEveboardUrl.Enabled = inputEveboardPass.Enabled = buttonFillFromEveboard.Enabled = radioButton2.Checked;
+        }
 
         private void PC_CalculationCompleted(object sender, EventArgs e)
         {
@@ -126,27 +135,30 @@ namespace EVECharPriceCheck
         {
             String[] SetValues = Set.Split('/');
 
-            if (SetValues.Count() != 3)
+            if (SetValues.Count() == 3) //russian plural
             {
-                return Set;
+                int lastdigit = Math.Abs(Value) % 10;
+                if (lastdigit == 0)
+                {
+                    return SetValues[2];
+                }
+                else if (lastdigit == 1)
+                {
+                    return SetValues[0];
+                }
+                else if ((lastdigit > 1) && (lastdigit <= 4))
+                {
+                    return SetValues[1];
+                }
+                else if (lastdigit > 4)
+                {
+                    return SetValues[2];
+                }
             }
-
-            int AbsValue = Math.Abs(Value);
-            if (AbsValue == 0)
+            else if (SetValues.Count() == 2) //english plural
             {
-                return SetValues[2];
-            }
-            else if (AbsValue == 1)
-            {
-                return SetValues[0];
-            }
-            else if ((AbsValue > 1) && (AbsValue <= 4))
-            {
-                return SetValues[1];
-            }
-            else if (AbsValue > 4)
-            {
-                return SetValues[2];
+                int absValue = Math.Abs(Value);
+                return absValue == 1 ? SetValues[0] : SetValues[1];
             }
 
             return Set;
@@ -176,6 +188,8 @@ namespace EVECharPriceCheck
 
             StringBuilder result = new StringBuilder();
 
+            bool IsSkillBooksLoaded = SkillBooksPriceCalculator.BooksDataLoaded && (calculator.InjectedSkillsPrice > 0);
+
             if (calculator.ResultIskMaxPrice > 0)
             {
                 if (calculator.ResultIskMinPrice > 0)
@@ -203,32 +217,34 @@ namespace EVECharPriceCheck
                     );
                 }
                 result.AppendLine();
-                result.AppendFormat(LocRM.GetString("detailed_s2_template"), new object[]
+                result.AppendFormat(LocRM.GetString(IsSkillBooksLoaded ? "detailed_s2_template_skillbooks" : "detailed_s2_template"), new object[]
                     {
                     EveCharPriceCalculator.FormatValue(calculator.ResultIskMaxPrice),
                     calculator.ResultSkillInjectorsItemsRequired,
                     EveCharPriceCalculator.FormatValue(calculator.SkillInjectorMinSellPrice),
                     Plural(calculator.ResultSkillInjectorsItemsRequired, LocRM.GetString("item_SkillInjector")),
+                    EveCharPriceCalculator.FormatValue(calculator.InjectedSkillsPrice)
                     }
                 );
-                result.AppendLine();
-                result.Append(LocRM.GetString("detailed_s3_template"));
+                //result.AppendLine();
+                //result.Append(LocRM.GetString("detailed_s3_template"));
 
                 if (calculator.ResultIskMinPrice > 0)
                 {
                     result.AppendLine();
-                    result.AppendFormat(LocRM.GetString("detailed_s4_template"), new object[]
+                    result.AppendFormat(LocRM.GetString(IsSkillBooksLoaded ? "detailed_s4_template_skillbooks" : "detailed_s4_template"), new object[]
                         {
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice),
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskToTrainToMinExtractPoints),
                         EveCharPriceCalculator.FormatValue(calculator.ResultIskMinPrice + calculator.ResultIskToTrainToMinExtractPoints),
                         calculator.ResultSkillInjectorsExtraItemsRequired,
-                        EveCharPriceCalculator.FormatValue(EveConstant.MinSkillPointsAfterExtraction, 0)
+                        EveCharPriceCalculator.FormatValue(EveConstant.MinSkillPointsAfterExtraction, 0),
+                        EveCharPriceCalculator.FormatValue(calculator.InjectedSkillsPrice)
                         }
                     );
                 }
                 result.AppendLine();
-                result.Append(LocRM.GetString("detailed_s5_template"));
+                result.Append(LocRM.GetString(IsSkillBooksLoaded ? "detailed_s5_template_skillbooks" : "detailed_s5_template"));
             }
             else
             {
@@ -281,6 +297,7 @@ namespace EVECharPriceCheck
         private void tbSkillPoints_ValueChanged(object sender, EventArgs e)
         {
             PC.SkillPoints = (int)(sender as NumericUpDown).Value;
+            PC.InjectedSkillsPrice = 0;
         }
 
         private void tbSkillExMinSell_ValueChanged(object sender, EventArgs e)
@@ -325,6 +342,8 @@ namespace EVECharPriceCheck
                 englishToolStripMenuItem_Click(englishToolStripMenuItem, EventArgs.Empty);
             }
 
+            UpdateSkillPointsControls();
+
         }
 
 
@@ -353,6 +372,51 @@ namespace EVECharPriceCheck
             ChangeFormLanguage((sender as ToolStripMenuItem).Tag.ToString());
             SetCurrenLanguageButtonChecked(sender);
             UpdateControls(PC);
+        }
+
+        private void buttonFillFromEveboard_Click(object sender, EventArgs e)
+        {
+            SkillDataResponse sdr = EveBoardApi.GetSkillBooksList(inputEveboardUrl.Text, inputEveboardPass.Text);
+            if (sdr.IsEmpty())
+            {
+                if ((sdr.IsRestricted) && String.IsNullOrEmpty(inputEveboardPass.Text))
+                {
+                    inputEveboardPass.BackColor = Color.Red;
+                }
+                PC.InjectedSkillsPrice = 0;
+            }
+            else
+            {
+                inputEveboardPass.BackColor = Color.FromKnownColor(KnownColor.Window);
+                labelAPIKeyExpires.Visible = sdr.ApiKeyExpired;
+
+                inputSkillPoints.Value = sdr.TotalSkillPoints;
+
+                PC.SkillPoints = (int)inputSkillPoints.Value;
+                decimal InjectedSkillCost = SkillBooksPriceCalculator.GetSkillBooksPrice(sdr.SkillsList, new string[] { }, new string[] { (selectRegionBox.SelectedItem as ComboBoxRegionItem).Value }) - EveConstant.NewCharInjectedSkillBooksCost;
+                if (InjectedSkillCost < 0)
+                {
+                    InjectedSkillCost = 0;
+                }
+                PC.InjectedSkillsPrice = InjectedSkillCost;
+
+            }
+        }
+
+        private void radioButtonCharacter_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateSkillPointsControls();
+        }
+
+        private void inputEveboardUrl_TextChanged(object sender, EventArgs e)
+        {
+            inputEveboardPass.BackColor = Color.FromKnownColor(KnownColor.Window);
+            labelAPIKeyExpires.Visible = false;
+        }
+
+        private void inputEveboardUrl_Leave(object sender, EventArgs e)
+        {
+            inputEveboardUrl.Text = inputEveboardUrl.Text.Trim();
         }
     }
 

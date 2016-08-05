@@ -17,9 +17,10 @@ namespace EVECharPriceCheck
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
+            this.labelCompany.Text = AssemblyCompany;
             //this.textBoxDescription.Text = AssemblyDescription;
 
-                }
+        }
 
         #region Методы доступа к атрибутам сборки
 

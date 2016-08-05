@@ -118,22 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="detailed_s0_template" xml:space="preserve">
-    <value>The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.</value>
+    <value>  The lowest character price starting from 0 ISK. That is not great character, the real price on it will depend on actual trained skills.</value>
   </data>
   <data name="detailed_s1_template" xml:space="preserve">
-    <value>The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} {6} by {2} ISK {8} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} {7} by {4} ISK {8}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.</value>
+    <value>  The lowest character price {0} ISK is price, below which the seller does not make sense to sell his character. It calculated as one can buy {1} {6} by {2} ISK {8} ({1} * {2} ≈ {3}), extract skill points from character and then sold resulting {1} {7} by {4} ISK {8}, that will bring him ({1} * {4} ≈ {5}). So profit will be {5} - {3} ≈ {0} ISK.</value>
   </data>
   <data name="detailed_s2_template" xml:space="preserve">
-    <value>The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.</value>
+    <value>  The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each ({1} * {2} ≈ {0}) and train such character himself.</value>
+  </data>
+  <data name="detailed_s2_template_skillbooks" xml:space="preserve">
+    <value>  The highest character price {0} ISK is price, above which the buyer does not make sense to pay. It calculated as one can buy {1} {3} {2} ISK each, also he will need to buy required Skill Books which cost about {4} ({1} * {2} + {4} ≈ {0}) and train such character himself.</value>
   </data>
   <data name="detailed_s3_template" xml:space="preserve">
-    <value>Note, this is only techical price check.</value>
+    <value>  Note, this is only techical price check.</value>
   </data>
   <data name="detailed_s4_template" xml:space="preserve">
-    <value>While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.</value>
+    <value>  While selling this character the started ask price should be higher and may start from about {0} + {1} = {2} ISK. That {1} sum is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points.</value>
+  </data>
+  <data name="detailed_s4_template_skillbooks" xml:space="preserve">
+    <value>  While selling this character the started ask price should be higher and may start from about {0} + {1} + {5} = {2} ISK. Where the {1} sum - is the price of {3} Skill Injectors, required to train the new character to approx. {4} skill points, the {5} sum - is the cost of skill books, injected into character.</value>
   </data>
   <data name="detailed_s5_template" xml:space="preserve">
-    <value>The upper price may vary due to skillboks required to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.</value>
+    <value>  The upper price may vary due to skillboks required to inject skills, character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.</value>
+  </data>
+  <data name="detailed_s5_template_skillbooks" xml:space="preserve">
+    <value>  The character price may vary due to character name, corp history, faction standings, character stuff etc. Also don't forget to consider your trade skills (while buying/selling skill extractors/injectors from market) and availability of the required amount of items on the appropriate price.</value>
   </data>
   <data name="eng_multi_1" xml:space="preserve">
     <value>s</value>
@@ -142,13 +151,13 @@
     <value> each</value>
   </data>
   <data name="item_Plex" xml:space="preserve">
-    <value>PLEX/PLEX/PLEX</value>
+    <value>PLEX/PLEX</value>
   </data>
   <data name="item_SkillExtractor" xml:space="preserve">
-    <value>Skill Extractor/Skill Extractors/Skill Extractors</value>
+    <value>Skill Extractor/Skill Extractors</value>
   </data>
   <data name="item_SkillInjector" xml:space="preserve">
-    <value>Skill Injector/Skill Injectors/Skill Injectors</value>
+    <value>Skill Injector/Skill Injectors</value>
   </data>
   <data name="short_empty_template" xml:space="preserve">
     <value>Seems that character costs nothing.</value>

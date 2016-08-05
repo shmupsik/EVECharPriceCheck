@@ -1,0 +1,2541 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<skills xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <skill>
+		<typeid>33078</typeid>
+		<name>Armor Layering</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24568</typeid>
+		<name>Capital Remote Armor Repair Systems</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>27936</typeid>
+		<name>Capital Remote Hull Repair Systems</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21803</typeid>
+		<name>Capital Repair Systems</name>
+		<cost>17500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22806</typeid>
+		<name>EM Armor Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22807</typeid>
+		<name>Explosive Armor Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3394</typeid>
+		<name>Hull Upgrades</name>
+		<cost>60000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22808</typeid>
+		<name>Kinetic Armor Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3392</typeid>
+		<name>Mechanics</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16069</typeid>
+		<name>Remote Armor Repair Systems</name>
+		<cost>85000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>27902</typeid>
+		<name>Remote Hull Repair Systems</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3393</typeid>
+		<name>Repair Systems</name>
+		<cost>30000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22809</typeid>
+		<name>Thermal Armor Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3363</typeid>
+		<name>Corporation Management</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3368</typeid>
+		<name>Diplomatic Relations</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3732</typeid>
+		<name>Empire Control</name>
+		<cost>8000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3731</typeid>
+		<name>Megacorp Management</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12241</typeid>
+		<name>Sovereignty</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23566</typeid>
+		<name>Advanced Drone Avionics</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12484</typeid>
+		<name>Amarr Drone Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12487</typeid>
+		<name>Caldari Drone Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3437</typeid>
+		<name>Drone Avionics</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23618</typeid>
+		<name>Drone Durability</name>
+		<cost>50000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3442</typeid>
+		<name>Drone Interfacing</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12305</typeid>
+		<name>Drone Navigation</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23606</typeid>
+		<name>Drone Sharpshooting</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3436</typeid>
+		<name>Drones</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24613</typeid>
+		<name>Fighter Hangar Management</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23069</typeid>
+		<name>Fighters</name>
+		<cost>50000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12486</typeid>
+		<name>Gallente Drone Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3441</typeid>
+		<name>Heavy Drone Operation</name>
+		<cost>380000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>32339</typeid>
+		<name>Heavy Fighters</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24241</typeid>
+		<name>Light Drone Operation</name>
+		<cost>50000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>40572</typeid>
+		<name>Light Fighters</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33699</typeid>
+		<name>Medium Drone Operation</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3438</typeid>
+		<name>Mining Drone Operation</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12485</typeid>
+		<name>Minmatar Drone Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3439</typeid>
+		<name>Repair Drone Operation</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3440</typeid>
+		<name>Salvage Drone Operation</name>
+		<cost>220000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23594</typeid>
+		<name>Sentry Drone Interfacing</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>40573</typeid>
+		<name>Support Fighters</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>27911</typeid>
+		<name>Burst Projector Operation</name>
+		<cost>12000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11579</typeid>
+		<name>Cloaking</name>
+		<cost>3500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3427</typeid>
+		<name>Electronic Warfare</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19760</typeid>
+		<name>Frequency Modulation</name>
+		<cost>160000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19759</typeid>
+		<name>Long Distance Jamming</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3435</typeid>
+		<name>Propulsion Jamming</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3433</typeid>
+		<name>Sensor Linking</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19761</typeid>
+		<name>Signal Dispersion</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19766</typeid>
+		<name>Signal Suppression</name>
+		<cost>800000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19922</typeid>
+		<name>Signature Focusing</name>
+		<cost>600000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>27906</typeid>
+		<name>Tactical Logistics Reconfiguration</name>
+		<cost>25000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>4411</typeid>
+		<name>Target Breaker Amplification</name>
+		<cost>600000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19921</typeid>
+		<name>Target Painting</name>
+		<cost>90000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19767</typeid>
+		<name>Weapon Destabilization</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3434</typeid>
+		<name>Weapon Disruption</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11207</typeid>
+		<name>Advanced Weapon Upgrades</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3423</typeid>
+		<name>Capacitor Emission Systems</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3418</typeid>
+		<name>Capacitor Management</name>
+		<cost>170000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3417</typeid>
+		<name>Capacitor Systems Operation</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24572</typeid>
+		<name>Capital Capacitor Emission Systems</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3426</typeid>
+		<name>CPU Management</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3432</typeid>
+		<name>Electronics Upgrades</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3424</typeid>
+		<name>Energy Grid Upgrades</name>
+		<cost>79000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3421</typeid>
+		<name>Energy Pulse Weapons</name>
+		<cost>130000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28880</typeid>
+		<name>Nanite Interfacing</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28879</typeid>
+		<name>Nanite Operation</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3413</typeid>
+		<name>Power Grid Management</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>32797</typeid>
+		<name>Resistance Phasing</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28164</typeid>
+		<name>Thermodynamics</name>
+		<cost>4500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3318</typeid>
+		<name>Weapon Upgrades</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41404</typeid>
+		<name>Capital Artillery Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41403</typeid>
+		<name>Capital Autocannon Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41408</typeid>
+		<name>Capital Beam Laser Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41405</typeid>
+		<name>Capital Blaster Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20327</typeid>
+		<name>Capital Energy Turret</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21666</typeid>
+		<name>Capital Hybrid Turret</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21667</typeid>
+		<name>Capital Projectile Turret</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41407</typeid>
+		<name>Capital Pulse Laser Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41406</typeid>
+		<name>Capital Railgun Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3316</typeid>
+		<name>Controlled Bursts</name>
+		<cost>70000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24563</typeid>
+		<name>Doomsday Operation</name>
+		<cost>250000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41537</typeid>
+		<name>Doomsday Rapid Firing</name>
+		<cost>250000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3300</typeid>
+		<name>Gunnery</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12203</typeid>
+		<name>Large Artillery Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12209</typeid>
+		<name>Large Autocannon Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12205</typeid>
+		<name>Large Beam Laser Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12212</typeid>
+		<name>Large Blaster Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3309</typeid>
+		<name>Large Energy Turret</name>
+		<cost>2000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3307</typeid>
+		<name>Large Hybrid Turret</name>
+		<cost>2000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3308</typeid>
+		<name>Large Projectile Turret</name>
+		<cost>2000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12215</typeid>
+		<name>Large Pulse Laser Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12207</typeid>
+		<name>Large Railgun Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12202</typeid>
+		<name>Medium Artillery Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12208</typeid>
+		<name>Medium Autocannon Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12204</typeid>
+		<name>Medium Beam Laser Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12211</typeid>
+		<name>Medium Blaster Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3306</typeid>
+		<name>Medium Energy Turret</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3304</typeid>
+		<name>Medium Hybrid Turret</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3305</typeid>
+		<name>Medium Projectile Turret</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12214</typeid>
+		<name>Medium Pulse Laser Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12206</typeid>
+		<name>Medium Railgun Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3312</typeid>
+		<name>Motion Prediction</name>
+		<cost>60000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3310</typeid>
+		<name>Rapid Firing</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3311</typeid>
+		<name>Sharpshooter</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12201</typeid>
+		<name>Small Artillery Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11084</typeid>
+		<name>Small Autocannon Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11083</typeid>
+		<name>Small Beam Laser Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12210</typeid>
+		<name>Small Blaster Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3303</typeid>
+		<name>Small Energy Turret</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3301</typeid>
+		<name>Small Hybrid Turret</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3302</typeid>
+		<name>Small Projectile Turret</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12213</typeid>
+		<name>Small Pulse Laser Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11082</typeid>
+		<name>Small Railgun Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3315</typeid>
+		<name>Surgical Strike</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22043</typeid>
+		<name>Tactical Weapon Reconfiguration</name>
+		<cost>25000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3317</typeid>
+		<name>Trajectory Analysis</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20494</typeid>
+		<name>Armored Warfare</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11569</typeid>
+		<name>Armored Warfare Specialist</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24764</typeid>
+		<name>Fleet Command</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20495</typeid>
+		<name>Information Warfare</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3352</typeid>
+		<name>Information Warfare Specialist</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3348</typeid>
+		<name>Leadership</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22552</typeid>
+		<name>Mining Director</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22536</typeid>
+		<name>Mining Foreman</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3350</typeid>
+		<name>Siege Warfare</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3351</typeid>
+		<name>Siege Warfare Specialist</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3349</typeid>
+		<name>Skirmish Warfare</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11572</typeid>
+		<name>Skirmish Warfare Specialist</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3354</typeid>
+		<name>Warfare Link Specialist</name>
+		<cost>2500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11574</typeid>
+		<name>Wing Command</name>
+		<cost>2000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3322</typeid>
+		<name>Auto-Targeting Missiles</name>
+		<cost>25000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28073</typeid>
+		<name>Bomb Deployment</name>
+		<cost>8000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20212</typeid>
+		<name>Cruise Missile Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3326</typeid>
+		<name>Cruise Missiles</name>
+		<cost>350000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3323</typeid>
+		<name>Defender Missiles</name>
+		<cost>30000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20312</typeid>
+		<name>Guided Missile Precision</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25718</typeid>
+		<name>Heavy Assault Missile Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25719</typeid>
+		<name>Heavy Assault Missiles</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20211</typeid>
+		<name>Heavy Missile Specialization</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3324</typeid>
+		<name>Heavy Missiles</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20210</typeid>
+		<name>Light Missile Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3321</typeid>
+		<name>Light Missiles</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12441</typeid>
+		<name>Missile Bombardment</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3319</typeid>
+		<name>Missile Launcher Operation</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12442</typeid>
+		<name>Missile Projection</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21071</typeid>
+		<name>Rapid Launch</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20209</typeid>
+		<name>Rocket Specialization</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3320</typeid>
+		<name>Rockets</name>
+		<cost>10000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20314</typeid>
+		<name>Target Navigation Prediction</name>
+		<cost>60000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20213</typeid>
+		<name>Torpedo Specialization</name>
+		<cost>9000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3325</typeid>
+		<name>Torpedoes</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20315</typeid>
+		<name>Warhead Upgrades</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41410</typeid>
+		<name>XL Cruise Missile Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>32435</typeid>
+		<name>XL Cruise Missiles</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>41409</typeid>
+		<name>XL Torpedo Specialization</name>
+		<cost>27000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21668</typeid>
+		<name>XL Torpedoes</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3452</typeid>
+		<name>Acceleration Control</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3450</typeid>
+		<name>Afterburner</name>
+		<cost>22500</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21603</typeid>
+		<name>Cynosural Field Theory</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3453</typeid>
+		<name>Evasive Maneuvering</name>
+		<cost>25000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3451</typeid>
+		<name>Fuel Conservation</name>
+		<cost>30000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3454</typeid>
+		<name>High Speed Maneuvering</name>
+		<cost>340000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21611</typeid>
+		<name>Jump Drive Calibration</name>
+		<cost>30000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3456</typeid>
+		<name>Jump Drive Operation</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21610</typeid>
+		<name>Jump Fuel Conservation</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24562</typeid>
+		<name>Jump Portal Generation</name>
+		<cost>50000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>4385</typeid>
+		<name>Micro Jump Drive Operation</name>
+		<cost>4500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3449</typeid>
+		<name>Navigation</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3455</typeid>
+		<name>Warp Drive Operation</name>
+		<cost>30000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33407</typeid>
+		<name>Advanced Infomorph Psychology</name>
+		<cost>36000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3405</typeid>
+		<name>Biology</name>
+		<cost>25000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24606</typeid>
+		<name>Cloning Facility Operation</name>
+		<cost>125000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3411</typeid>
+		<name>Cybernetics</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24242</typeid>
+		<name>Infomorph Psychology</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33399</typeid>
+		<name>Infomorph Synchronizing</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25538</typeid>
+		<name>Neurotoxin Control</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25530</typeid>
+		<name>Neurotoxin Recovery</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>2403</typeid>
+		<name>Advanced Planetology</name>
+		<cost>7500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>2505</typeid>
+		<name>Command Center Upgrades</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>2495</typeid>
+		<name>Interplanetary Consolidation</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>2406</typeid>
+		<name>Planetology</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>13279</typeid>
+		<name>Remote Sensing</name>
+		<cost>250000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3396</typeid>
+		<name>Advanced Industrial Ship Construction</name>
+		<cost>2000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3388</typeid>
+		<name>Advanced Industry</name>
+		<cost>250000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3398</typeid>
+		<name>Advanced Large Ship Construction</name>
+		<cost>25000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24625</typeid>
+		<name>Advanced Mass Production</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3397</typeid>
+		<name>Advanced Medium Ship Construction</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3395</typeid>
+		<name>Advanced Small Ship Construction</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22242</typeid>
+		<name>Capital Ship Construction</name>
+		<cost>75000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26224</typeid>
+		<name>Drug Manufacturing</name>
+		<cost>25000000</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3380</typeid>
+		<name>Industry</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3387</typeid>
+		<name>Mass Production</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3400</typeid>
+		<name>Outpost Construction</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24268</typeid>
+		<name>Supply Chain Management</name>
+		<cost>7500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12180</typeid>
+		<name>Arkonor Processing</name>
+		<cost>375000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3410</typeid>
+		<name>Astrogeology</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12181</typeid>
+		<name>Bistot Processing</name>
+		<cost>350000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12182</typeid>
+		<name>Crokite Processing</name>
+		<cost>325000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12183</typeid>
+		<name>Dark Ochre Processing</name>
+		<cost>275000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11395</typeid>
+		<name>Deep Core Mining</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25544</typeid>
+		<name>Gas Cloud Harvesting</name>
+		<cost>24000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12184</typeid>
+		<name>Gneiss Processing</name>
+		<cost>250000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12185</typeid>
+		<name>Hedbergite Processing</name>
+		<cost>225000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12186</typeid>
+		<name>Hemorphite Processing</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16281</typeid>
+		<name>Ice Harvesting</name>
+		<cost>375000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>18025</typeid>
+		<name>Ice Processing</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28585</typeid>
+		<name>Industrial Reconfiguration</name>
+		<cost>25000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12187</typeid>
+		<name>Jaspet Processing</name>
+		<cost>175000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12188</typeid>
+		<name>Kernite Processing</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12189</typeid>
+		<name>Mercoxit Processing</name>
+		<cost>400000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3386</typeid>
+		<name>Mining</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22578</typeid>
+		<name>Mining Upgrades</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12190</typeid>
+		<name>Omber Processing</name>
+		<cost>125000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12191</typeid>
+		<name>Plagioclase Processing</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12192</typeid>
+		<name>Pyroxeres Processing</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3385</typeid>
+		<name>Reprocessing</name>
+		<cost>50000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3389</typeid>
+		<name>Reprocessing Efficiency</name>
+		<cost>280000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25863</typeid>
+		<name>Salvaging</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12193</typeid>
+		<name>Scordite Processing</name>
+		<cost>50000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12196</typeid>
+		<name>Scrapmetal Processing</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12194</typeid>
+		<name>Spodumain Processing</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12195</typeid>
+		<name>Veldspar Processing</name>
+		<cost>25000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26253</typeid>
+		<name>Armor Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26254</typeid>
+		<name>Astronautics Rigging</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26255</typeid>
+		<name>Drones Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26256</typeid>
+		<name>Electronic Superiority Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26258</typeid>
+		<name>Energy Weapon Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26259</typeid>
+		<name>Hybrid Weapon Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26252</typeid>
+		<name>Jury Rigging</name>
+		<cost>60000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26260</typeid>
+		<name>Launcher Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26257</typeid>
+		<name>Projectile Weapon Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>26261</typeid>
+		<name>Shield Rigging</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>13278</typeid>
+		<name>Archaeology</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25811</typeid>
+		<name>Astrometric Acquisition</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25810</typeid>
+		<name>Astrometric Pinpointing</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25739</typeid>
+		<name>Astrometric Rangefinding</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3412</typeid>
+		<name>Astrometrics</name>
+		<cost>450000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21718</typeid>
+		<name>Hacking</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3551</typeid>
+		<name>Survey</name>
+		<cost>36000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24624</typeid>
+		<name>Advanced Laboratory Operation</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23087</typeid>
+		<name>Amarr Encryption Methods</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11444</typeid>
+		<name>Amarr Starship Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11487</typeid>
+		<name>Astronautic Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21790</typeid>
+		<name>Caldari Encryption Methods</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11454</typeid>
+		<name>Caldari Starship Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30324</typeid>
+		<name>Defensive Subsystem Technology</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11448</typeid>
+		<name>Electromagnetic Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11453</typeid>
+		<name>Electronic Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30326</typeid>
+		<name>Electronic Subsystem Technology</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30325</typeid>
+		<name>Engineering Subsystem Technology</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23121</typeid>
+		<name>Gallente Encryption Methods</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11450</typeid>
+		<name>Gallente Starship Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11446</typeid>
+		<name>Graviton Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11433</typeid>
+		<name>High Energy Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11443</typeid>
+		<name>Hydromagnetic Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3406</typeid>
+		<name>Laboratory Operation</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11447</typeid>
+		<name>Laser Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11452</typeid>
+		<name>Mechanical Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3409</typeid>
+		<name>Metallurgy</name>
+		<cost>350000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21791</typeid>
+		<name>Minmatar Encryption Methods</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11445</typeid>
+		<name>Minmatar Starship Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11529</typeid>
+		<name>Molecular Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11442</typeid>
+		<name>Nanite Engineering</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11451</typeid>
+		<name>Nuclear Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30327</typeid>
+		<name>Offensive Subsystem Technology</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11441</typeid>
+		<name>Plasma Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30788</typeid>
+		<name>Propulsion Subsystem Technology</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11455</typeid>
+		<name>Quantum Physics</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3403</typeid>
+		<name>Research</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12179</typeid>
+		<name>Research Project Management</name>
+		<cost>40000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11449</typeid>
+		<name>Rocket Science</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3402</typeid>
+		<name>Science</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24270</typeid>
+		<name>Scientific Networking</name>
+		<cost>7500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3408</typeid>
+		<name>Sleeper Encryption Methods</name>
+		<cost>15000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21789</typeid>
+		<name>Sleeper Technology</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23123</typeid>
+		<name>Takmahl Technology</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20433</typeid>
+		<name>Talocan Technology</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23124</typeid>
+		<name>Yan Jung Technology</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24571</typeid>
+		<name>Capital Shield Emission Systems</name>
+		<cost>10000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21802</typeid>
+		<name>Capital Shield Operation</name>
+		<cost>25000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12365</typeid>
+		<name>EM Shield Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12367</typeid>
+		<name>Explosive Shield Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12366</typeid>
+		<name>Kinetic Shield Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>21059</typeid>
+		<name>Shield Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3422</typeid>
+		<name>Shield Emission Systems</name>
+		<cost>80000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3419</typeid>
+		<name>Shield Management</name>
+		<cost>170000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3416</typeid>
+		<name>Shield Operation</name>
+		<cost>35000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3425</typeid>
+		<name>Shield Upgrades</name>
+		<cost>84000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3420</typeid>
+		<name>Tactical Shield Manipulation</name>
+		<cost>210000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11566</typeid>
+		<name>Thermal Shield Compensation</name>
+		<cost>120000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3359</typeid>
+		<name>Connections</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3361</typeid>
+		<name>Criminal Connections</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3357</typeid>
+		<name>Diplomacy</name>
+		<cost>180000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3894</typeid>
+		<name>Distribution Connections</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3358</typeid>
+		<name>Fast Talk</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3893</typeid>
+		<name>Mining Connections</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3356</typeid>
+		<name>Negotiation</name>
+		<cost>60000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3895</typeid>
+		<name>Security Connections</name>
+		<cost>0</cost>
+		<sellbynpc>false</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3355</typeid>
+		<name>Social</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20342</typeid>
+		<name>Advanced Spaceship Command</name>
+		<cost>50000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33095</typeid>
+		<name>Amarr Battlecruiser</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3339</typeid>
+		<name>Amarr Battleship</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24311</typeid>
+		<name>Amarr Carrier</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3335</typeid>
+		<name>Amarr Cruiser</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33091</typeid>
+		<name>Amarr Destroyer</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20525</typeid>
+		<name>Amarr Dreadnought</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20524</typeid>
+		<name>Amarr Freighter</name>
+		<cost>75000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3331</typeid>
+		<name>Amarr Frigate</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3343</typeid>
+		<name>Amarr Industrial</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30650</typeid>
+		<name>Amarr Strategic Cruiser</name>
+		<cost>1500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>34390</typeid>
+		<name>Amarr Tactical Destroyer</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3347</typeid>
+		<name>Amarr Titan</name>
+		<cost>5500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12095</typeid>
+		<name>Assault Frigates</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28656</typeid>
+		<name>Black Ops</name>
+		<cost>64000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33096</typeid>
+		<name>Caldari Battlecruiser</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3338</typeid>
+		<name>Caldari Battleship</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24312</typeid>
+		<name>Caldari Carrier</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3334</typeid>
+		<name>Caldari Cruiser</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33092</typeid>
+		<name>Caldari Destroyer</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20530</typeid>
+		<name>Caldari Dreadnought</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20526</typeid>
+		<name>Caldari Freighter</name>
+		<cost>75000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3330</typeid>
+		<name>Caldari Frigate</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3342</typeid>
+		<name>Caldari Industrial</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30651</typeid>
+		<name>Caldari Strategic Cruiser</name>
+		<cost>1500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>35680</typeid>
+		<name>Caldari Tactical Destroyer</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3346</typeid>
+		<name>Caldari Titan</name>
+		<cost>5500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28374</typeid>
+		<name>Capital Industrial Ships</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20533</typeid>
+		<name>Capital Ships</name>
+		<cost>400000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>37615</typeid>
+		<name>Command Destroyers</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>23950</typeid>
+		<name>Command Ships</name>
+		<cost>64000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12093</typeid>
+		<name>Covert Ops</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28615</typeid>
+		<name>Electronic Attack Ships</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22551</typeid>
+		<name>Exhumers</name>
+		<cost>28000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33856</typeid>
+		<name>Expedition Frigates</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33097</typeid>
+		<name>Gallente Battlecruiser</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3336</typeid>
+		<name>Gallente Battleship</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24313</typeid>
+		<name>Gallente Carrier</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3332</typeid>
+		<name>Gallente Cruiser</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33093</typeid>
+		<name>Gallente Destroyer</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20531</typeid>
+		<name>Gallente Dreadnought</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20527</typeid>
+		<name>Gallente Freighter</name>
+		<cost>75000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3328</typeid>
+		<name>Gallente Frigate</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3340</typeid>
+		<name>Gallente Industrial</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30652</typeid>
+		<name>Gallente Strategic Cruiser</name>
+		<cost>1500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>35685</typeid>
+		<name>Gallente Tactical Destroyer</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3344</typeid>
+		<name>Gallente Titan</name>
+		<cost>5500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16591</typeid>
+		<name>Heavy Assault Cruisers</name>
+		<cost>32000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28609</typeid>
+		<name>Heavy Interdiction Cruisers</name>
+		<cost>32000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>29637</typeid>
+		<name>Industrial Command Ships</name>
+		<cost>50000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12092</typeid>
+		<name>Interceptors</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12098</typeid>
+		<name>Interdictors</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>29029</typeid>
+		<name>Jump Freighters</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>12096</typeid>
+		<name>Logistics Cruisers</name>
+		<cost>28000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>40328</typeid>
+		<name>Logistics Frigates</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>28667</typeid>
+		<name>Marauders</name>
+		<cost>64000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>17940</typeid>
+		<name>Mining Barge</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>32918</typeid>
+		<name>Mining Frigate</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33098</typeid>
+		<name>Minmatar Battlecruiser</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3337</typeid>
+		<name>Minmatar Battleship</name>
+		<cost>4000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>24314</typeid>
+		<name>Minmatar Carrier</name>
+		<cost>500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3333</typeid>
+		<name>Minmatar Cruiser</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33094</typeid>
+		<name>Minmatar Destroyer</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20532</typeid>
+		<name>Minmatar Dreadnought</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>20528</typeid>
+		<name>Minmatar Freighter</name>
+		<cost>75000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3329</typeid>
+		<name>Minmatar Frigate</name>
+		<cost>40000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3341</typeid>
+		<name>Minmatar Industrial</name>
+		<cost>300000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30653</typeid>
+		<name>Minmatar Strategic Cruiser</name>
+		<cost>1500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>34533</typeid>
+		<name>Minmatar Tactical Destroyer</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3345</typeid>
+		<name>Minmatar Titan</name>
+		<cost>5500000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>34327</typeid>
+		<name>ORE Freighter</name>
+		<cost>35000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3184</typeid>
+		<name>ORE Industrial</name>
+		<cost>1600000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>22761</typeid>
+		<name>Recon Ships</name>
+		<cost>32000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3327</typeid>
+		<name>Spaceship Command</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>19719</typeid>
+		<name>Transport Ships</name>
+		<cost>30000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>11584</typeid>
+		<name>Anchoring</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3373</typeid>
+		<name>Starbase Defense Management</name>
+		<cost>1000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>37797</typeid>
+		<name>Structure Doomsday Operation</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>37798</typeid>
+		<name>Structure Electronic Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>37799</typeid>
+		<name>Structure Engineering Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>37796</typeid>
+		<name>Structure Missile Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30532</typeid>
+		<name>Amarr Defensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30536</typeid>
+		<name>Amarr Electronic Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30539</typeid>
+		<name>Amarr Engineering Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30537</typeid>
+		<name>Amarr Offensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30538</typeid>
+		<name>Amarr Propulsion Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30544</typeid>
+		<name>Caldari Defensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30542</typeid>
+		<name>Caldari Electronic Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30548</typeid>
+		<name>Caldari Engineering Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30549</typeid>
+		<name>Caldari Offensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30552</typeid>
+		<name>Caldari Propulsion Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30540</typeid>
+		<name>Gallente Defensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30541</typeid>
+		<name>Gallente Electronic Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30546</typeid>
+		<name>Gallente Engineering Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30550</typeid>
+		<name>Gallente Offensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30553</typeid>
+		<name>Gallente Propulsion Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30545</typeid>
+		<name>Minmatar Defensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30543</typeid>
+		<name>Minmatar Electronic Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30547</typeid>
+		<name>Minmatar Engineering Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30551</typeid>
+		<name>Minmatar Offensive Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>30554</typeid>
+		<name>Minmatar Propulsion Systems</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3430</typeid>
+		<name>Advanced Target Management</name>
+		<cost>500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33000</typeid>
+		<name>Gravimetric Sensor Compensation</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33001</typeid>
+		<name>Ladar Sensor Compensation</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3428</typeid>
+		<name>Long Range Targeting</name>
+		<cost>88000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>32999</typeid>
+		<name>Magnetometric Sensor Compensation</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33002</typeid>
+		<name>Radar Sensor Compensation</name>
+		<cost>200000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3431</typeid>
+		<name>Signature Analysis</name>
+		<cost>75000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3429</typeid>
+		<name>Target Management</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16622</typeid>
+		<name>Accounting</name>
+		<cost>5000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3446</typeid>
+		<name>Broker Relations</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25235</typeid>
+		<name>Contracting</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>25233</typeid>
+		<name>Corporation Contracting</name>
+		<cost>150000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>33467</typeid>
+		<name>Customs Code Expertise</name>
+		<cost>3000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16595</typeid>
+		<name>Daytrading</name>
+		<cost>12500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16597</typeid>
+		<name>Margin Trading</name>
+		<cost>20000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16598</typeid>
+		<name>Marketing</name>
+		<cost>3500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16594</typeid>
+		<name>Procurement</name>
+		<cost>1500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3444</typeid>
+		<name>Retail</name>
+		<cost>100000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3443</typeid>
+		<name>Trade</name>
+		<cost>20000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>18580</typeid>
+		<name>Tycoon</name>
+		<cost>100000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>3447</typeid>
+		<name>Visibility</name>
+		<cost>7500000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+	<skill>
+		<typeid>16596</typeid>
+		<name>Wholesale</name>
+		<cost>35000000</cost>
+		<sellbynpc>true</sellbynpc>
+	</skill>
+</skills>
