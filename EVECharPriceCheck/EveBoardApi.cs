@@ -14,7 +14,7 @@ namespace EVECharPriceCheck
 
         public static SkillDataResponse GetSkillBooksList(string url, string pass)
         {
-            string SkillsPattern = @"<td height=""20"" class=""dotted"" style=""[^>]+>(?:<span style=""color: #[0-9a-fA-F]{6};"">)?(?<Skill>[^\/]+)\s\/[^\/]+[^\/]+\/[^\/]+\/[^\/<]+<\/";
+            string SkillsPattern = @"<td height=""20"" class=""dotted"" style=""[^>]+>(?:<span style=""color: #[0-9a-fA-F]{6};"">){0,2}(?<Skill>[^\/]+)\s\/[^\/]+[^\/]+\/[^\/]+\/[^\/<]+<\/";
             string SPPattern = @"<td height=""15"" align=""left"" bgcolor=""#000000"">Skill points<\/td>.*?<td align=""left"" bgcolor=""#000000"">(?<SkillPoints>[^<]+)<\/td>";
             string ErrorKeyPattern = @"<td height=""25"" align=""center"" bgcolor=""#FF0000"" style=""border: solid 2px #ffffff;""><span style=""font-size: 12px; font-weight: bold;"">(?<ErrorText>[^<]+)";
             string RestrictedPattern = @"<td align=""center"" valign=""top"">The access to this character is restricted, please enter the password to continue<br />";
