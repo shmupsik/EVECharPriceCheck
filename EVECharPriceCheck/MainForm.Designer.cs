@@ -62,6 +62,7 @@
             this.selectRegionBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxEveboardStatus = new System.Windows.Forms.PictureBox();
             this.labelAPIKeyExpires = new System.Windows.Forms.Label();
             this.buttonFillFromEveboard = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.inputPlexMinSell)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEveboardStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputSkillPoints)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,21 +108,21 @@
             // 
             // picturePlex
             // 
-            this.picturePlex.Image = global::EVECharPriceCheck.Properties.Resources.Plex;
+            this.picturePlex.Image = global::EVECharPriceCheck.Properties.Resources.item_29668_64;
             resources.ApplyResources(this.picturePlex, "picturePlex");
             this.picturePlex.Name = "picturePlex";
             this.picturePlex.TabStop = false;
             // 
             // pictureSkillExtractor
             // 
-            this.pictureSkillExtractor.Image = global::EVECharPriceCheck.Properties.Resources.SkillExtractor;
+            this.pictureSkillExtractor.Image = global::EVECharPriceCheck.Properties.Resources.item_40519_64;
             resources.ApplyResources(this.pictureSkillExtractor, "pictureSkillExtractor");
             this.pictureSkillExtractor.Name = "pictureSkillExtractor";
             this.pictureSkillExtractor.TabStop = false;
             // 
             // pictureSkillInjector
             // 
-            this.pictureSkillInjector.Image = global::EVECharPriceCheck.Properties.Resources.SkillInjector;
+            this.pictureSkillInjector.Image = global::EVECharPriceCheck.Properties.Resources.item_40520_64;
             resources.ApplyResources(this.pictureSkillInjector, "pictureSkillInjector");
             this.pictureSkillInjector.Name = "pictureSkillInjector";
             this.pictureSkillInjector.TabStop = false;
@@ -311,6 +313,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBoxEveboardStatus);
             this.groupBox1.Controls.Add(this.labelAPIKeyExpires);
             this.groupBox1.Controls.Add(this.buttonFillFromEveboard);
             this.groupBox1.Controls.Add(this.label5);
@@ -324,6 +327,13 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBoxEveboardStatus
+            // 
+            this.pictureBoxEveboardStatus.Image = global::EVECharPriceCheck.Properties.Resources.downloading;
+            resources.ApplyResources(this.pictureBoxEveboardStatus, "pictureBoxEveboardStatus");
+            this.pictureBoxEveboardStatus.Name = "pictureBoxEveboardStatus";
+            this.pictureBoxEveboardStatus.TabStop = false;
             // 
             // labelAPIKeyExpires
             // 
@@ -357,16 +367,16 @@
             // radioButton2
             // 
             resources.ApplyResources(this.radioButton2, "radioButton2");
+            this.radioButton2.Checked = true;
             this.radioButton2.Name = "radioButton2";
+            this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButtonCharacter_CheckedChanged);
             // 
             // radioButton1
             // 
             resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Checked = true;
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButtonCharacter_CheckedChanged);
             // 
@@ -386,12 +396,12 @@
             // 
             // inputSkillPoints
             // 
+            resources.ApplyResources(this.inputSkillPoints, "inputSkillPoints");
             this.inputSkillPoints.Increment = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            resources.ApplyResources(this.inputSkillPoints, "inputSkillPoints");
             this.inputSkillPoints.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -445,6 +455,7 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEveboardStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputSkillPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -496,6 +507,7 @@
         private System.Windows.Forms.NumericUpDown inputSkillPoints;
         private System.Windows.Forms.Label labelAPIKeyExpires;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox pictureBoxEveboardStatus;
     }
 }
 

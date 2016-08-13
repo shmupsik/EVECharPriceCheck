@@ -101,8 +101,8 @@ namespace EVECharPriceCheck
                 return;
             }
 
-            List<ItemPrice> ItemPricesList = EveCentralApi.GetPrices(new String[] { EveCentralApi.typeid_SKILLEXT, EveCentralApi.typeid_SKILLINJ, EveCentralApi.typeid_PLEX }, new string[] { }, new string[] { (selectRegionBox.SelectedItem as ComboBoxRegionItem).Value });
-            foreach (ItemPrice item in ItemPricesList)
+            var ItemPricesList = EveCentralApi.GetPrices(new String[] { EveCentralApi.typeid_SKILLEXT, EveCentralApi.typeid_SKILLINJ, EveCentralApi.typeid_PLEX }, new string[] { }, new string[] { (selectRegionBox.SelectedItem as ComboBoxRegionItem).Value });
+            foreach (var item in ItemPricesList)
             {
                 if (item.TypeId == EveCentralApi.typeid_SKILLEXT)
                 {
@@ -254,6 +254,31 @@ namespace EVECharPriceCheck
             return result.ToString();
         }
 
+        private void AnimateDownload(PictureBox picture, bool ShowImage, bool IsDownloading, bool IsSucces = false)
+        {
+            picture.Visible = ShowImage;
+
+            if (IsDownloading)
+            {
+                //To use animated gif we need not to block UI thread, so we need to use a separate thread. With .net 4.5 it seems easy (Task/await/async), but we use .net 3.5 so it requires quite a bit work
+                //picture.Image = Properties.Resources.downloading;
+                picture.Visible = false;
+            }
+            else
+            {
+                if (IsSucces)
+                {
+                    picture.Image = Properties.Resources.resultOk;
+                }
+                else
+                {
+                    picture.Image = Properties.Resources.resultError;
+                }
+
+            }
+            picture.Refresh();
+
+        }
 
 
         private void UpdateControls(EveCharPriceCalculator calculator)
@@ -298,6 +323,7 @@ namespace EVECharPriceCheck
         {
             PC.SkillPoints = (int)(sender as NumericUpDown).Value;
             PC.InjectedSkillsPrice = 0;
+            AnimateDownload(pictureBoxEveboardStatus, false, false);
         }
 
         private void tbSkillExMinSell_ValueChanged(object sender, EventArgs e)
@@ -376,6 +402,8 @@ namespace EVECharPriceCheck
 
         private void buttonFillFromEveboard_Click(object sender, EventArgs e)
         {
+            AnimateDownload(pictureBoxEveboardStatus, true, true);
+
             SkillDataResponse sdr = EveBoardApi.GetSkillBooksList(inputEveboardUrl.Text, inputEveboardPass.Text);
             if (sdr.IsEmpty())
             {
@@ -401,6 +429,8 @@ namespace EVECharPriceCheck
                 PC.InjectedSkillsPrice = InjectedSkillCost;
 
             }
+
+            AnimateDownload(pictureBoxEveboardStatus, true, false, sdr.IsSuccessful && !sdr.IsEmpty());
         }
 
         private void radioButtonCharacter_CheckedChanged(object sender, EventArgs e)
@@ -412,6 +442,7 @@ namespace EVECharPriceCheck
         {
             inputEveboardPass.BackColor = Color.FromKnownColor(KnownColor.Window);
             labelAPIKeyExpires.Visible = false;
+            AnimateDownload(pictureBoxEveboardStatus, false, false);
         }
 
         private void inputEveboardUrl_Leave(object sender, EventArgs e)

@@ -348,7 +348,7 @@ namespace EVECharPriceCheck
 
         private int GetSkillPointsCount(int CurrentSkillPoints)
         {
-            int result = EveConstant.SkillExtractorDefaultInjectPoints;
+            int result = EveConstant.SkillInjectorDefaultInjectPoints;
 
             if (CurrentSkillPoints >= 100000000)
             {

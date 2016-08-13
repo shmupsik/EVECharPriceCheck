@@ -64,7 +64,7 @@ namespace EVECharPriceCheck
         {
             decimal result = 0;
 
-            List<EveMarketItem> notFoundedItems = new List<EveMarketItem>();
+            var notFoundedItems = new List<EveMarketItem>();
 
             foreach (string InjectedSkill in InjectedSkills)
             {
@@ -72,13 +72,13 @@ namespace EVECharPriceCheck
                 var item = Array.Find(skillBooksList, p => p.name.Equals(InjectedSkill, StringComparison.InvariantCultureIgnoreCase));
                 if (item != null)
                 {
-                    if ((item.cost == 0) || (!item.sellbynpc))
+                    if ((item.MinSell == 0) || (!item.sellbynpc))
                     {
                         notFoundedItems.Add(item);
                     }
                     else
                     {
-                        result += item.cost;
+                        result += item.MinSell;
                     }
                 }
 
@@ -86,9 +86,9 @@ namespace EVECharPriceCheck
 
             if (notFoundedItems.Count > 0)
             {
-                var itemsid = notFoundedItems.Select(p => p.typeid).ToArray();
-                List<ItemPrice> ItemPricesList = EveCentralApi.GetPrices(itemsid, regionid, systemid);
-                foreach (ItemPrice item in ItemPricesList)
+                var itemsid = notFoundedItems.Select(p => p.TypeId).ToArray();
+                var ItemPricesList = EveCentralApi.GetPrices(itemsid, regionid, systemid);
+                foreach (var item in ItemPricesList)
                 {
                     result += item.MinSell;
                 }

@@ -61,6 +61,16 @@ namespace EVECharPriceCheck.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap downloading {
+            get {
+                object obj = ResourceManager.GetObject("downloading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
         ///&lt;skills xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
         ///    &lt;skill&gt;
@@ -88,9 +98,9 @@ namespace EVECharPriceCheck.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Plex {
+        internal static System.Drawing.Bitmap item_29668_64 {
             get {
-                object obj = ResourceManager.GetObject("Plex", resourceCulture);
+                object obj = ResourceManager.GetObject("item_29668_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -98,9 +108,9 @@ namespace EVECharPriceCheck.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SkillExtractor {
+        internal static System.Drawing.Bitmap item_40519_64 {
             get {
-                object obj = ResourceManager.GetObject("SkillExtractor", resourceCulture);
+                object obj = ResourceManager.GetObject("item_40519_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -108,9 +118,29 @@ namespace EVECharPriceCheck.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SkillInjector {
+        internal static System.Drawing.Bitmap item_40520_64 {
             get {
-                object obj = ResourceManager.GetObject("SkillInjector", resourceCulture);
+                object obj = ResourceManager.GetObject("item_40520_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resultError {
+            get {
+                object obj = ResourceManager.GetObject("resultError", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resultOk {
+            get {
+                object obj = ResourceManager.GetObject("resultOk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

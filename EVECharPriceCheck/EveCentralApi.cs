@@ -11,7 +11,7 @@ namespace EVECharPriceCheck
 {
     public static class EveCentralApi
     {
-        const string url = "http://api.eve-central.com/api/marketstat/json";
+        const string url = @"http://api.eve-central.com/api/marketstat/json";
 
         public const string typeid_PLEX = "29668";
         public const string typeid_SKILLEXT = "40519";
@@ -80,9 +80,9 @@ namespace EVECharPriceCheck
         }
         #endregion
 
-        public static ItemPrice GetPrice(string typeid, string[] regionid, string[] systemid)
+        public static EveMarketItem GetPrice(string typeid, string[] regionid, string[] systemid)
         {
-            ItemPrice result = new ItemPrice();
+            var result = new EveMarketItem();
 
             // Создаём объект WebClient
             using (var webClient = new WebClient())
@@ -112,6 +112,7 @@ namespace EVECharPriceCheck
                         result.MaxBuy = T.buy.max;
                         result.MinSell = T.sell.min;
                         result.MaxSell = T.sell.max;
+                        result.sellbynpc = false;
                     }
 
                 }
@@ -130,9 +131,9 @@ namespace EVECharPriceCheck
 
         }
 
-        public static List<ItemPrice> GetPrices(string[] typeid, string[] regionid, string[] systemid)
+        public static List<EveMarketItem> GetPrices(string[] typeid, string[] regionid, string[] systemid)
         {
-            List<ItemPrice> result = new List<ItemPrice>();
+            var result = new List<EveMarketItem>();
 
             // Создаём объект WebClient
             using (var webClient = new WebClient())
@@ -158,12 +159,13 @@ namespace EVECharPriceCheck
 
                     foreach (MarketResponse T in marketResponse)
                     {
-                        ItemPrice item = new ItemPrice();
+                        var item = new EveMarketItem();
                         item.TypeId = T.all.ForQuery.types[0];
                         item.MinBuy = T.buy.min;
                         item.MaxBuy = T.buy.max;
                         item.MinSell = T.sell.min;
                         item.MaxSell = T.sell.max;
+                        item.sellbynpc = false;
                         result.Add(item);
                     }
 
